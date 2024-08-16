@@ -1,15 +1,26 @@
+import { createGlobalStyle } from 'styled-components';
+import 'modern-normalize';
+
+export const GlobalCSS = createGlobalStyle`
 :root {
   --main-bg-color: #0a0a0a;
   --second-bg-color: #1a1a1a;
   --accent-color: #d3e97a;
+  --weak-accent-color: #d3e97a25;
   --white-color: #ffffff;
   --gray-color: #c7c7c7;
-  --glow-shadow: 0 0 5px var(--accent-color), 0 0 10px var(--accent-color),
-    0 0 20px var(--accent-color), 0 0 40px var(--accent-color),
-    0 0 80px var(--accent-color);
-  --hover-shadow: 0 0 5px var(--white-color), 0 0 10px var(--white-color),
-    0 0 20px var(--white-color), 0 0 40px var(--white-color),
-    0 0 80px var(--white-color);
+  --small-glow-shadow:  
+                  0 0 5px var(--accent-color);
+  --glow-shadow:  0 0 5px var(--accent-color),
+                  0 0 10px var(--accent-color),
+                  0 0 20px var(--accent-color),
+                  0 0 40px var(--accent-color),
+                  0 0 80px var(--accent-color);
+  --hover-shadow: 0 0 5px var(--white-color), 
+                  0 0 10px var(--white-color),
+                  0 0 20px var(--white-color), 
+                  0 0 40px var(--white-color),
+                  0 0 80px var(--white-color);
 }
 
 body {
@@ -26,7 +37,6 @@ body {
   line-height: 1.5;
   }
 }
-
 
 h1,
 h2,
@@ -66,3 +76,4 @@ button {
 input {
   font-family: inherit;
 }
+`;

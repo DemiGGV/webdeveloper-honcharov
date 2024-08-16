@@ -2,50 +2,59 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
-  padding: 10px;
-`;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  `;
 
 export const Navigation = styled.nav`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+`;
+
+export const StyledText = styled.p`
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  vertical-align: middle;
+  letter-spacing: -0.01em;
+
+  display: inline-block;
+  color: var(--white-color);
+  text-shadow: var(--small-glow-shadow);
 `;
 
 export const StyledLink = styled(Link)`
-  padding: 8px 16px;
-  color: #ffffff; /* White text color */
-  text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
+  padding: 20px 20px;
+  color: var(--white-color);
+  text-shadow: var(--glow-shadow);
   transition:
     color 0.3s,
     text-shadow 0.3s;
 
   &:hover,
   &:focus {
-    color: #00baff; /* Blue text color on hover/focus */
-    text-shadow:
-      0 0 5px #00baff,
-      0 0 10px #00baff,
-      0 0 20px #00baff,
-      0 0 40px #00baff,
-      0 0 80px #00baff;
+    color: var(--white-color);
+    text-shadow: var(--hover-shadow);
   }
 `;
 
 export const IconWrapper = styled.svg`
   width: ${(props) => props.size || '12px'};
   height: ${(props) => props.size || '12px'};
-  fill: ${(props) => props.color || '#ffffff'};
+  fill: ${(props) => props.color || 'var(--white-color)'};
   display: inline-block;
   margin-right: 5px;
-  box-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
+  box-shadow: var(--glow-shadow);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;

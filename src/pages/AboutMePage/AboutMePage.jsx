@@ -1,4 +1,4 @@
-import { Container, Block, Title, StyledLink } from './SecondPage.styled';
+import { Container, Block, Title, StyledLink } from './AboutMePage.styled';
 
 const SecondPage = () => {
   return (

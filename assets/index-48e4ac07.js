@@ -98,7 +98,7 @@ body {
   line-height: 1.6;
   color: var(--gray-color);
 
-  @media screen and (min-width: 768px) {    
+  @media screen and (min-width: 600px) {    
   font-size: 18px;
   line-height: 1.5;
   }
@@ -149,13 +149,14 @@ input {
   `,v1=ye.nav`
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
   }
 `,g1=ye.p`
+  padding: 20px 0;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   font-size: 28px;
@@ -187,7 +188,7 @@ input {
   margin-right: 5px;
   box-shadow: var(--glow-shadow);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     display: none;
   }
 `;const y1=ye.div`
@@ -200,7 +201,7 @@ position: relative;
   justify-content: space-between;
   cursor: pointer;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     display: none;
   }
 `,w1=ye.div`
@@ -230,7 +231,7 @@ bottom: 0;
   background-color: var(--main-bg-color);
   ${e=>e.$isOpen?"":"display: none;"}
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     display: none;
   }
 `,E1=ye.p`
@@ -264,7 +265,7 @@ bottom: 0;
   align-items: center;
   gap: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     display: none;
   }
 `,P1=({toggleMobileMenu:e,isOpen:t})=>R.jsxs(R.Fragment,{children:[R.jsx(x1,{toggleMobileMenu:e,isOpen:t}),R.jsx(k1,{$isOpen:t,children:R.jsxs(C1,{children:[R.jsx(E1,{children:"Mobile menu:"}),R.jsx(zl,{to:"#work",children:"Work"}),R.jsx(zl,{to:"#about",children:"About"}),R.jsx(zl,{to:"#contact",children:"Contact"})]})})]}),_1=()=>{const e=no(),[t,n]=P.useState(!1),r=()=>{n(!t)};return P.useEffect(()=>{n(!1)},[e.hash]),R.jsxs(m1,{children:[R.jsx(g1,{children:"Heorhii Honcharov"}),R.jsx(P1,{toggleMobileMenu:r,isOpen:t}),R.jsxs(v1,{children:[R.jsx(Ll,{to:"#work",children:"Work"}),R.jsx(Ll,{to:"#about",children:"About"}),R.jsx(Ll,{to:"#contact",children:"Contact"})]})]})},$1=ye.div`
@@ -362,7 +363,9 @@ bottom: 0;
 
   padding: 20px 16px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px 40px;
   }
-`,Fg="";function Ug(){return console.log(Fg),R.jsx(Dg,{children:R.jsx(Jh,{children:R.jsxs(mr,{path:"/",element:R.jsx(z1,{}),children:[R.jsx(mr,{path:"/home",element:R.jsx(Rg,{})}),R.jsx(mr,{path:"/about-me",element:R.jsx(Ig,{})}),R.jsx(mr,{path:"*",element:R.jsx(Ag,{})})]})})})}Fl.createRoot(document.getElementById("root")).render(R.jsx(be.StrictMode,{children:R.jsxs(rm,{basename:"/webdeveloper-honcharov/",children:[R.jsx(h1,{}),R.jsx(Ug,{})]})}));
+`,Fg="";function Ug(){return console.log(Fg),R.jsx(Dg,{children:R.jsx(Jh,{children:R.jsxs(mr,{path:"/",element:R.jsx(z1,{}),children:[R.jsx(mr,{index:!0,element:R.jsx(Rg,{})}),R.jsx(mr,{path:"/about-me",element:R.jsx(Ig,{})}),R.jsx(mr,{path:"*",element:R.jsx(Ag,{})})]})})})}Fl.createRoot(document.getElementById("root")).render(R.jsx(be.StrictMode,{children:R.jsxs(rm,{basename:"/webdeveloper-honcharov/",children:[R.jsx(h1,{}),R.jsx(Ug,{})]})}));

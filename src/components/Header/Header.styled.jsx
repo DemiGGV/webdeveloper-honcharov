@@ -10,7 +10,7 @@ export const HeaderContainer = styled.div`
 export const Navigation = styled.nav`
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +19,7 @@ export const Navigation = styled.nav`
 `;
 
 export const StyledText = styled.p`
+  padding: 20px 0;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   font-size: 28px;
@@ -54,7 +55,7 @@ export const IconWrapper = styled.svg`
   margin-right: 5px;
   box-shadow: var(--glow-shadow);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     display: none;
   }
 `;

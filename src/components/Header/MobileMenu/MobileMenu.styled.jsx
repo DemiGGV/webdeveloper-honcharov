@@ -12,7 +12,7 @@ export const MobileNavigation = styled.nav`
   background-color: var(--main-bg-color);
   ${(props) => (props.$isOpen ? '' : 'display: none;')}
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     display: none;
   }
 `;
@@ -52,7 +52,7 @@ export const MobileMenuWrapper = styled.div`
   align-items: center;
   gap: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     display: none;
   }
 `;

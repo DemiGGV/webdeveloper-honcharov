@@ -13,7 +13,7 @@ function App() {
     <AppWrapper>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
-          <Route path="/home" element={<HomePage />} />
+        <Route index element={<HomePage />} />
           <Route path="/about-me" element={<AboutMePage />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>

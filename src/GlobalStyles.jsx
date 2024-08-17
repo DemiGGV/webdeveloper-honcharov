@@ -11,6 +11,8 @@ export const GlobalCSS = createGlobalStyle`
   --gray-color: #c7c7c7;
   --small-glow-shadow:  
                   0 0 5px var(--accent-color);
+  --small-inset-glow-shadow:  
+                  inset 0 0 5px var(--accent-color);
   --glow-shadow:  0 0 5px var(--accent-color),
                   0 0 10px var(--accent-color),
                   0 0 20px var(--accent-color),

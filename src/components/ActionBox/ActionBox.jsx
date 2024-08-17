@@ -6,13 +6,13 @@ import {
   StyledText,
   RoundButton,
   Icon,
-  IconSend
+  IconSend,
 } from './ActionBox.styled.jsx';
 
 export const ActionBox = () => {
   return (
     <Container>
-      <ContactButton to="#work">
+      <ContactButton to="#contact">
         <StyledText>Contact&nbsp;Me</StyledText>
         <IconSend>
           <IoIosSend
@@ -24,7 +24,11 @@ export const ActionBox = () => {
           />
         </IconSend>
       </ContactButton>
-      <RoundButton to="#work">
+      <RoundButton
+        href={'https://www.linkedin.com/in/heorhii-honcharov/'}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Icon>
           <IoLogoLinkedin
             style={{
@@ -35,7 +39,11 @@ export const ActionBox = () => {
           />
         </Icon>
       </RoundButton>
-      <RoundButton to="#work">
+      <RoundButton
+        href={'https://github.com/DemiGGV'}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Icon>
           <IoLogoGithub
             style={{

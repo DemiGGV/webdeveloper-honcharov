@@ -32,8 +32,11 @@ export const ContactButton = styled(Link)`
   gap: 4px;
   border-radius: 48px;
   background-color: var(--accent-color);
+
   &:hover,
   &:focus {
+    background-color: var(--white-color);
+    box-shadow: var(--small-glow-shadow);
   }
 `;
 
@@ -47,11 +50,7 @@ export const IconSend = styled.div`
   background-color: var(--second-bg-color);
 `;
 
-export const RoundButton = styled(Link)`
-  &:hover,
-  &:focus {
-  }
-`;
+export const RoundButton = styled.a``;
 
 export const Icon = styled.div`
   width: 48px;
@@ -61,4 +60,8 @@ export const Icon = styled.div`
   justify-content: center;
   align-items: center;
   background-color: var(--second-bg-color);
+  &:hover,
+  &:focus {
+    box-shadow: var(--small-glow-shadow);
+  }
 `;

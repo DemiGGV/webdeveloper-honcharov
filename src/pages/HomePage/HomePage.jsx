@@ -1,16 +1,17 @@
-import { HeroSection } from '../../components/HeroSection/HeroSection.jsx'
-// import { ProjectsSection } from '../../components/HeroSection/HeroSection'
-// import { HeroSection } from '../../components/HeroSection/HeroSection'
-// import { ContactSection } from '../../components/HeroSection/HeroSection'
+import { HeroSection } from '../../components/HeroSection/HeroSection.jsx';
+import { ProjectsSection } from '../../components/ProjectsSection/ProjectsSection';
+import { AboutSection } from '../../components/AboutSection/AboutSection';
+import { ContactSection } from '../../components/ContactSection/ContactSection';
 
 import { Container } from './HomePage.styled';
 
-const FirstPage = () => {
+export const HomePage = () => {
   return (
     <Container>
-      <HeroSection/>      
+      <HeroSection id='hero'/>
+      <ProjectsSection id='work'/>
+      <AboutSection id='about'/>
+      <ContactSection id='contact'/>
     </Container>
   );
 };
-
-export default FirstPage;

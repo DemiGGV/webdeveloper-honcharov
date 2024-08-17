@@ -1,26 +1,32 @@
-import Photo from '../../assets/images/image-mob.jpg';
+import { ActionBox } from '../ActionBox/ActionBox.jsx';
+import { ResponsiveImage } from '../ResponsiveImg/ResponsiveImg.jsx';
 import {
-    Title,
-    SubText,
-    ImageWrapper,
-    MainImage,
-  } from './HeroSection.styled.jsx';
+  Title,
+  SubText,
+  ImageWrapper,
+  Container,
+  SubContainer,
+} from './HeroSection.styled.jsx';
 
-export const HeroSection = () => {
+export const HeroSection = ({id}) => {
   return (
-    <>
-      <Title>Hi, i am Heorhii Honcharov</Title>
-      <SubText>
-        A Stuttgart based fullstack developer passionate about building
-        accessible and user friendly websites with React.js and Node.js.
-      </SubText>
+    <Container id={id}>
+      <SubContainer>
+        <Title>Hi, i am Heorhii Honcharov</Title>
+        <SubText>
+          A Stuttgart based fullstack developer passionate about building
+          accessible and user friendly websites with React.js and Node.js.
+        </SubText>
+        <ActionBox />
+      </SubContainer>
       <ImageWrapper>
-        <MainImage
-          src={Photo}
-          alt={'Heorhii Honcharov - Fullstack Developer'}
-          loading="lazy"
+        <ResponsiveImage
+          imgName="hero"
+          alt="Heorhii Honcharov - Fullstack Developer"
+          maxHeight="400"
+          ext="png"
         />
       </ImageWrapper>
-    </>
+    </Container>
   );
 };

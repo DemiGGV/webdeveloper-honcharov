@@ -17,9 +17,9 @@ export const MobileMenu = ({ toggleMobileMenu, isOpen }) => {
       <MobileNavigation $isOpen={isOpen}>
         <MobileMenuWrapper>
           <StyledText>Mobile menu:</StyledText>
-          <StyledLink to="#work">Work</StyledLink>
-          <StyledLink to="#about">About</StyledLink>
-          <StyledLink to="#contact">Contact</StyledLink>
+          <StyledLink smooth to="#work">Work</StyledLink>
+          <StyledLink smooth to="#about">About</StyledLink>
+          <StyledLink smooth to="#contact">Contact</StyledLink>
         </MobileMenuWrapper>
       </MobileNavigation>
     </>

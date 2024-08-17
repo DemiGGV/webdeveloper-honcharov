@@ -26,13 +26,13 @@ export const Header = () => {
       <StyledText>Heorhii Honcharov</StyledText>
       <MobileMenu toggleMobileMenu = { toggleMobileMenu } isOpen = { isMobMenuOpen }/>
       <Navigation>
-        <StyledLink to="#work">
+        <StyledLink smooth  to="#work">
           Work
         </StyledLink>
-        <StyledLink to="#about">
+        <StyledLink smooth to="#about">
           About
         </StyledLink>
-        <StyledLink to="#contact">
+        <StyledLink smooth to="#contact">
           Contact
         </StyledLink>
       </Navigation>

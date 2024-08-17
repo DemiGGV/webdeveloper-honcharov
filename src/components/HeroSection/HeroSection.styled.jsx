@@ -1,12 +1,5 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* padding-top: 500px; */
-`;
-
 export const Title = styled.h1`
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
@@ -47,10 +40,4 @@ export const MainImage = styled.img`
   max-height: 400px;
   height: auto;
   object-fit: contain;
-`;
-
-export const StyledImage = styled.img`
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
 `;

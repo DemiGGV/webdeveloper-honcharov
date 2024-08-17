@@ -1,6 +1,6 @@
 
 // import { IconWrapper } from "MobileMenu.styled.jsx";
-import { Icon } from './Icon/Icon';
+import { Icon } from '../Icon/Icon';
 import {
   MobileNavigation,
   StyledText,
@@ -13,6 +13,7 @@ export const MobileMenu = ({ toggleMobileMenu, isOpen }) => {
   return (
     <>
       <Icon toggleMobileMenu={toggleMobileMenu} isOpen={isOpen} />
+      {/* <MobileNavigation $isOpen={isOpen}> */}
       <MobileNavigation $isOpen={isOpen}>
         <MobileMenuWrapper>
           <StyledText>Mobile menu:</StyledText>

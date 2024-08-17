@@ -46,16 +46,3 @@ export const StyledLink = styled(Link)`
     text-shadow: var(--hover-shadow);
   }
 `;
-
-export const IconWrapper = styled.svg`
-  width: ${(props) => props.size || '12px'};
-  height: ${(props) => props.size || '12px'};
-  fill: ${(props) => props.color || 'var(--white-color)'};
-  display: inline-block;
-  margin-right: 5px;
-  box-shadow: var(--glow-shadow);
-
-  @media screen and (min-width: 600px) {
-    display: none;
-  }
-`;

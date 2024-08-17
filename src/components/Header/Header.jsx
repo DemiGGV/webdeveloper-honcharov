@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { MobileMenu } from '../MobileMenu/MobileMenu.jsx';
 import {
   HeaderContainer,
   StyledText,
   Navigation,
   StyledLink,
 } from './Header.styled';
-import { MobileMenu } from './MobileMenu/MobileMenu.jsx';
 
 export const Header = () => {
   const location = useLocation();

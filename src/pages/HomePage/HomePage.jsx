@@ -1,9 +1,14 @@
-import { Container, Title } from './HomePage.styled';
+import { HeroSection } from '../../components/HeroSection/HeroSection.jsx'
+// import { ProjectsSection } from '../../components/HeroSection/HeroSection'
+// import { HeroSection } from '../../components/HeroSection/HeroSection'
+// import { ContactSection } from '../../components/HeroSection/HeroSection'
+
+import { Container } from './HomePage.styled';
 
 const FirstPage = () => {
   return (
     <Container>
-      <Title>First Page</Title>
+      <HeroSection/>      
     </Container>
   );
 };

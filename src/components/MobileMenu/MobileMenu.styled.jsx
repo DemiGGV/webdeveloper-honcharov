@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const MobileNavigation = styled.nav`
-  z-index: 100;
+  z-index: 10;
   top: 0;
   left: 0;
   position: absolute;
@@ -12,7 +12,7 @@ export const MobileNavigation = styled.nav`
   background-color: var(--main-bg-color);
   ${(props) => (props.$isOpen ? '' : 'display: none;')}
 
-  @media screen and (min-width: 600px) {
+  @media screen and ( min-width: 600px ) {
     display: none;
   }
 `;

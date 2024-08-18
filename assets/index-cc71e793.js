@@ -512,6 +512,7 @@ PERFORMANCE OF THIS SOFTWARE.
     height: 400px;
   }
 `,$y=O.p`
+padding-bottom: 10px;
   border-bottom: 1px solid var(--gray-color);
 `,jy=O.a`
   padding: 12px;

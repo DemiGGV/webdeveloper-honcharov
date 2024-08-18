@@ -9,7 +9,7 @@ export const Project = styled.li`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    &:nth-child(even) {
+    &:nth-of-type(2n) {
       flex-direction: row-reverse;
     }
   }

@@ -10,6 +10,13 @@ import {
 import { data } from '../../assets/Data/data.js'
 
 export const ProjectsSection = ({ id }) => {
+
+
+
+  const handleModalOpen = (title,image,description) => {
+    console.log(title,image,description)
+  }
+
   return (
     <Container id={id}>
       <SectionHeader>
@@ -21,6 +28,7 @@ export const ProjectsSection = ({ id }) => {
         data.map(({ id, title, image, alt, description, skills, link }) => (
           <OneProject
             key={id}
+            handleModalOpen={handleModalOpen}
             title={title}
             image={image}
             alt={alt}

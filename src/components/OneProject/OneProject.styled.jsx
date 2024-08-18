@@ -22,7 +22,6 @@ export const Project = styled.li`
 
 export const ImageWraper = styled.div`
   width: 100%;
-  /* min-width: fit-content; */
   padding: 40px 20px;
 
   display: flex;
@@ -37,7 +36,6 @@ export const ImageWraper = styled.div`
 
   transition: all 0.2s ease;
   background-color: var(--second-bg-color);
-  scale: 1;
 
   @media screen and (min-width: 768px) {
     height: 450px;
@@ -52,7 +50,6 @@ export const ImageWraper = styled.div`
 
   &:hover {
     background-color: var(--weak-accent-color);
-    scale: 1.01;
   }
 `;
 

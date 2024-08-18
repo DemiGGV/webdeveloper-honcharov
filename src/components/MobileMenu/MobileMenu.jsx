@@ -13,7 +13,7 @@ export const MobileMenu = ({ toggleMobileMenu, isOpen }) => {
   return (
     <>
       <Icon toggleMobileMenu={toggleMobileMenu} isOpen={isOpen} />
-      <MobileNavigation $isOpen={isOpen}>
+      <MobileNavigation className={isOpen ? '' : 'visually-hidden'} >
         <MobileMenuWrapper>
           <StyledText>Mobile menu:</StyledText>
           <StyledLink smooth to="#work">Work</StyledLink>

@@ -16,7 +16,7 @@ export const StyledText = styled.p`
   color: var(--main-bg-color);
   display: contents;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 1;
   }
@@ -32,9 +32,9 @@ export const ContactButton = styled(Link)`
   gap: 4px;
   border-radius: 48px;
   background-color: var(--accent-color);
+  transition: all 0.2s ease;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: var(--white-color);
     box-shadow: var(--small-glow-shadow);
   }
@@ -60,8 +60,9 @@ export const Icon = styled.div`
   justify-content: center;
   align-items: center;
   background-color: var(--second-bg-color);
-  &:hover,
-  &:focus {
+  transition: all 0.2s ease;
+  
+  &:hover{
     box-shadow: var(--small-glow-shadow);
   }
 `;

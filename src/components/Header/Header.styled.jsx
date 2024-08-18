@@ -6,12 +6,12 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  `;
+`;
 
 export const Navigation = styled.nav`
   display: none;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;

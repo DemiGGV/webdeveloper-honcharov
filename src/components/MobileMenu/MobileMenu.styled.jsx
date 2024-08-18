@@ -2,6 +2,17 @@
 import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
 
+// position: absolute;
+// width: 1px;
+// height: 1px;
+// margin: -1px;
+// border: 0;
+// padding: 0;
+// white-space: nowrap;
+// clip-path: inset(100%);
+// clip: rect(0 0 0 0);
+// overflow: hidden;
+
 export const MobileNavigation = styled.nav`
   z-index: 10;
   top: 0;
@@ -11,9 +22,9 @@ export const MobileNavigation = styled.nav`
   height: 100vh;
 
   background-color: var(--main-bg-color);
-  ${(props) => (props.$isOpen ? '' : 'display: none;')}
+  opacity: 1;
 
-  @media screen and ( min-width: 600px ) {
+  @media screen and ( min-width: 768px ) {
     display: none;
   }
 `;
@@ -53,7 +64,7 @@ export const MobileMenuWrapper = styled.div`
   align-items: center;
   gap: 20px;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 `;

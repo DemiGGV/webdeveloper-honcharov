@@ -10,7 +10,7 @@ position: relative;
   justify-content: space-between;
   cursor: pointer;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 `;

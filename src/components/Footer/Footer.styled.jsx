@@ -16,7 +16,4 @@ export const StyledText = styled.p`
   display: block;
   color: var(--white-color);
   text-shadow: var(--small-glow-shadow);
-  transition:
-    color 0.3s,
-    text-shadow 0.3s;
 `;

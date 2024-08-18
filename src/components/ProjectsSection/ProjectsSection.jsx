@@ -11,8 +11,6 @@ import { data } from '../../assets/Data/data.js'
 
 export const ProjectsSection = ({ id }) => {
 
-
-
   const handleModalOpen = (title,image,description) => {
     console.log(title,image,description)
   }

@@ -1,4 +1,4 @@
-import { Image } from './ResponsiveImg.styled';
+import { PictureStyled,ImgStyled } from './ResponsiveImg.styled';
 
 export const ResponsiveImage = ({
   imgName,
@@ -6,13 +6,10 @@ export const ResponsiveImage = ({
   maxHeight = '400',
   ext = 'jpg',
 }) => {
-  // Images should be placed in the PUBLIC/IMAGES Dir...
-  // Should be named using the following template: "name"-mobile/tablet/desktop-@1x/@2x.jpg/.png
-  //   Media rules:
 
-  const maxMobileWidth = 600;
+  const maxMobileWidth = 420;
   const maxTabletWidth = 768;
-  const maxDesktopWidth = 1200;
+  const maxDesktopWidth = 1440;
 
   const publicUrl = import.meta.env.BASE_URL;
   const mediaRule = (widthValue) => {
@@ -20,7 +17,7 @@ export const ResponsiveImage = ({
   };
 
   return (
-    <picture>
+    <PictureStyled>
       <source
         srcSet={`${publicUrl}/images/${imgName}-mobile@1x.${ext} 1x, ${publicUrl}/images/${imgName}-mobile@2x.${ext} 2x`}
         media={mediaRule(maxMobileWidth)}
@@ -33,12 +30,12 @@ export const ResponsiveImage = ({
         srcSet={`${publicUrl}/images/${imgName}-desktop@1x.${ext} 1x, ${publicUrl}/images/${imgName}-desktop@2x.${ext} 2x" `}
         media={mediaRule(maxDesktopWidth)}
       />
-      <Image
+      <ImgStyled
         src={`${publicUrl}/images/${imgName}-desktop@1x.${ext}`}
         alt={`${alt}`}
         $maxHeight={maxHeight}
         loading="lazy"
       />
-    </picture>
+    </PictureStyled>
   );
 };

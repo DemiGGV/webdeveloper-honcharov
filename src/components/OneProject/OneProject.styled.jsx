@@ -7,18 +7,23 @@ export const Project = styled.li`
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+
     &:nth-of-type(2n) {
       flex-direction: row-reverse;
     }
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 60px;
   }
 `;
 
 export const ImageWraper = styled.div`
   width: 100%;
-  min-width: fit-content;
-  padding: 20px;
+  /* min-width: fit-content; */
+  padding: 40px 20px;
 
   display: flex;
   align-items: center;
@@ -27,30 +32,42 @@ export const ImageWraper = styled.div`
 
   border-radius: 16px;
   overflow: hidden;
-  
+
   cursor: pointer;
 
   transition: all 0.2s ease;
   background-color: var(--second-bg-color);
   scale: 1;
-  
-  @media screen and (min-width: 600px) {
-    padding: 30px;
-    height: 495px;
-}
 
-  &:hover{
+  @media screen and (min-width: 768px) {
+    height: 450px;
+    padding: 60px 20px;
+    min-width: 380px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 60px 30px;
+    height: 495px;
+  }
+
+  &:hover {
     background-color: var(--weak-accent-color);
     scale: 1.01;
   }
 `;
 
 export const ProjectCard = styled.div`
-  max-height: 495px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 8px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 300px;
+    max-height: 450px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 550px;
+  }
 `;
 
 export const ProjectTitle = styled.h3`
@@ -88,13 +105,14 @@ export const ProjectDescription = styled.p`
       var(--second-bg-color) 100%
     );
   }
-  @media screen and (min-width: 600) {
-    height: 400px;
+
+  @media screen and (min-width: 768px) {
+    height: fit-content;
   }
 `;
 
 export const ProjectSkills = styled.p`
-padding-bottom: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--gray-color);
 `;
 
@@ -104,6 +122,8 @@ export const ProjectLink = styled.a`
   display: flex;
   gap: 8px;
   justify-content: end;
+  transition: all 0.2s ease;
+
   &:hover {
     color: var(--accent-color);
   }

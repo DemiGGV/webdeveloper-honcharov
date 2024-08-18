@@ -23,7 +23,7 @@ export const OneProject = ({ handleModalOpen,
   return (
     <Project>
       <ImageWraper onClick={()=>handleModalOpen(title,image,description)}>
-        <ImageComponent imgName={image} alt={alt} maxHeight="340" />
+        <ImageComponent imgName={image} alt={alt} maxHeight="400" />
       </ImageWraper>
       <ProjectCard>
         <ProjectTitle>{title}</ProjectTitle>

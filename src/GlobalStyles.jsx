@@ -23,6 +23,10 @@ export const GlobalCSS = createGlobalStyle`
                   0 0 20px var(--white-color), 
                   0 0 40px var(--white-color),
                   0 0 80px var(--white-color);
+
+  --mobile: 420px;
+  --tablet: 768px;
+  --desktop: 1440px;
 }
 
 body {
@@ -34,7 +38,7 @@ body {
   line-height: 1.6;
   color: var(--gray-color);
 
-  @media screen and (min-width: 600px) {    
+  @media screen and (min-width: 768px) {    
   font-size: 18px;
   line-height: 1.5;
   }

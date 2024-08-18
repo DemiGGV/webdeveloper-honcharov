@@ -21,7 +21,7 @@ body {
   line-height: 1.6;
   color: var(--gray-color);
 
-  @media screen and (min-width: 600px) {    
+  @media screen and (min-width: 768px) {    
   font-size: 18px;
   line-height: 1.5;
   }

@@ -26,7 +26,7 @@ export const Header = () => {
       <StyledText>Heorhii Honcharov</StyledText>
       <MobileMenu toggleMobileMenu = { toggleMobileMenu } isOpen = { isMobMenuOpen }/>
       <Navigation>
-        <StyledLink smooth  to="#work">
+        <StyledLink smooth to="#work">
           Work
         </StyledLink>
         <StyledLink smooth to="#about">

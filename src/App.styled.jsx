@@ -6,9 +6,17 @@ export const AppWrapper = styled.div`
 
   padding: 20px 16px;
 
-  @media screen and (min-width: 600px) {
-    max-width: 1000px;
+  @media screen and (min-width: 420px) {
+    max-width: 420px;
     margin: 0 auto;
-    padding: 20px 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 20px 50px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding: 20px 100px;
   }
 `;

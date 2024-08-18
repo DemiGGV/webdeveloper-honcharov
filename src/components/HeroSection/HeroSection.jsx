@@ -22,7 +22,7 @@ export const HeroSection = ({id}) => {
       <ImageWrapper>
         <ResponsiveImage
           imgName="hero"
-          alt="Heorhii Honcharov - Fullstack Developer"
+          alt="Photo by Heorhii Honcharov - Fullstack Developer"
           maxHeight="400"
           ext="png"
         />

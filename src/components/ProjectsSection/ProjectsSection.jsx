@@ -7,62 +7,25 @@ import {
   ProjectsList
 } from './ProjectsSection.styled';
 
-const data = [
-  {
-    id: 1,
-    tumbnail: '',
-    image: '',
-    description: '',
-    link: '',
-  },
-  {
-    id: 1,
-    tumbnail: '',
-    image: '',
-    description: '',
-    link: '',
-  },
-  {
-    id: 1,
-    tumbnail: '',
-    image: '',
-    description: '',
-    link: '',
-  },
-  {
-    id: 1,
-    tumbnail: '',
-    image: '',
-    description: '',
-    link: '',
-  },
-  {
-    id: 1,
-    tumbnail: '',
-    image: '',
-    description: '',
-    link: '',
-  },
-];
-// image - small big
-// description
-// outside link
+import { data } from '../../assets/Data/data.js'
 
 export const ProjectsSection = ({ id }) => {
   return (
     <Container id={id}>
       <SectionHeader>
-        <TitleSection></TitleSection>
-        <SubTitleSection></SubTitleSection>
+        <TitleSection>Featured Projects</TitleSection>
+        <SubTitleSection>Here are some of the selected projects that showcase my passion for front-end development.</SubTitleSection>
       </SectionHeader>
       <ProjectsList>
       {data.length &&
-        data.map(({ id, tumbnail, image, description, link }) => (
+        data.map(({ id, title, image, alt, description, skills, link }) => (
           <OneProject
             key={id}
-            tumbnail={tumbnail}
+            title={title}
             image={image}
+            alt={alt}
             description={description}
+            skills={skills}
             link={link}
           />
         ))}

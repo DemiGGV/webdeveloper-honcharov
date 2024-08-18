@@ -1,7 +1,11 @@
 import { Image } from './ResponsiveImg.styled';
 
-export const ResponsiveImage = ({imgName, alt, maxHeight = '400', ext = "jpg"}) => {
-
+export const ResponsiveImage = ({
+  imgName,
+  alt,
+  maxHeight = '400',
+  ext = 'jpg',
+}) => {
   // Images should be placed in the PUBLIC/IMAGES Dir...
   // Should be named using the following template: "name"-mobile/tablet/desktop-@1x/@2x.jpg/.png
   //   Media rules:
@@ -31,7 +35,8 @@ export const ResponsiveImage = ({imgName, alt, maxHeight = '400', ext = "jpg"}) 
       />
       <Image
         src={`${publicUrl}/images/${imgName}-desktop@1x.${ext}`}
-        alt={`${alt} @maxHeight = ${maxHeight}`}
+        alt={`${alt}`}
+        $maxHeight={maxHeight}
         loading="lazy"
       />
     </picture>

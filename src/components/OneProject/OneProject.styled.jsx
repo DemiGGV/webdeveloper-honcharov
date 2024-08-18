@@ -94,6 +94,7 @@ export const ProjectDescription = styled.p`
 `;
 
 export const ProjectSkills = styled.p`
+padding-bottom: 10px;
   border-bottom: 1px solid var(--gray-color);
 `;
 

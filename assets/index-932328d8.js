@@ -363,7 +363,7 @@ PERFORMANCE OF THIS SOFTWARE.
   ${e=>e.$maxHeight?`max-height: ${e.$maxHeight}px;`:"max-height: 400px;"}
   height: auto;
   object-fit: contain;
-`,hy=({imgName:e,alt:t,maxHeight:n="400",ext:r="jpg"})=>{const a="/webdeveloper-honcharov/",s=u=>`(max-width: ${u}px)`;return k.jsxs("picture",{children:[k.jsx("source",{srcSet:`${a}/images/${e}-mobile@1x.${r} 1x, ${a}/images/${e}-mobile@2x.${r} 2x`,media:s(600)}),k.jsx("source",{srcSet:`${a}/images/${e}-tablet@1x.${r} 1x, ${a}/images/${e}-tablet@2x.${r} 2x`,media:s(768)}),k.jsx("source",{srcSet:`${a}/images/${e}-desktop@1x.${r} 1x, ${a}/images/${e}-desktop@2x.${r} 2x" `,media:s(1200)}),k.jsx(py,{src:`${a}/images/${e}-desktop@1x.${r}`,alt:`${t}`,$maxHeight:n,loading:"lazy"})]})},my=O.div`
+`,hy=({imgName:e,alt:t,maxHeight:n="400",ext:r="jpg"})=>{const a="/webdeveloper-honcharov/",s=u=>`(min-width: ${u}px)`;return k.jsxs("picture",{children:[k.jsx("source",{srcSet:`${a}/images/${e}-mobile@1x.${r} 1x, ${a}/images/${e}-mobile@2x.${r} 2x`,media:s(600)}),k.jsx("source",{srcSet:`${a}/images/${e}-tablet@1x.${r} 1x, ${a}/images/${e}-tablet@2x.${r} 2x`,media:s(768)}),k.jsx("source",{srcSet:`${a}/images/${e}-desktop@1x.${r} 1x, ${a}/images/${e}-desktop@2x.${r} 2x" `,media:s(1200)}),k.jsx(py,{src:`${a}/images/${e}-desktop@1x.${r}`,alt:`${t}`,$maxHeight:n,loading:"lazy"})]})},my=O.div`
   padding: 40px 0 60px 0;
   border-bottom: 1px solid var(--gray-color);
   @media screen and (min-width: 768px) {

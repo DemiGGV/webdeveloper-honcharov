@@ -16,7 +16,7 @@ export const ResponsiveImage = ({
 
   const publicUrl = import.meta.env.BASE_URL;
   const mediaRule = (widthValue) => {
-    return `(max-width: ${widthValue}px)`;
+    return `(min-width: ${widthValue}px)`;
   };
 
   return (

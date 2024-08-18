@@ -319,6 +319,7 @@ PERFORMANCE OF THIS SOFTWARE.
   @media screen and (min-width: 768px) {
     min-width: fit-content;
     height: 400px;
+    max-width: 655px;
   }
 
   @media screen and (min-width: 1440px) {

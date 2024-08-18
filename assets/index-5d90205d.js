@@ -405,7 +405,6 @@ PERFORMANCE OF THIS SOFTWARE.
   }
 `,py=L.div`
   width: 100%;
-  /* min-width: fit-content; */
   padding: 40px 20px;
 
   display: flex;
@@ -420,7 +419,6 @@ PERFORMANCE OF THIS SOFTWARE.
 
   transition: all 0.2s ease;
   background-color: var(--second-bg-color);
-  scale: 1;
 
   @media screen and (min-width: 768px) {
     height: 450px;
@@ -435,7 +433,6 @@ PERFORMANCE OF THIS SOFTWARE.
 
   &:hover {
     background-color: var(--weak-accent-color);
-    scale: 1.01;
   }
 `,hy=L.div`
   display: flex;

@@ -38,8 +38,8 @@ export const StyledLink = styled(Link)`
   color: var(--white-color);
   text-shadow: var(--glow-shadow);
   transition:
-    color 0.3s,
-    text-shadow 0.3s;
+    color 0.2s,
+    text-shadow 0.2s;
 
   &:hover,
   &:focus {

@@ -114,8 +114,8 @@ export const LinkStyled = styled(Link)`
   transition: all 0.2s ease;
 
   &:hover {
-      color: var(--accent-color);
-      text-shadow: var(--small-glow-shadow);
+    color: var(--accent-color);
+    text-shadow: var(--small-glow-shadow);
   }
 `;
 

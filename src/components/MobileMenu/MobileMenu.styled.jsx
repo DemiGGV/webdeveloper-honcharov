@@ -1,17 +1,5 @@
-// import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
-
-// position: absolute;
-// width: 1px;
-// height: 1px;
-// margin: -1px;
-// border: 0;
-// padding: 0;
-// white-space: nowrap;
-// clip-path: inset(100%);
-// clip: rect(0 0 0 0);
-// overflow: hidden;
 
 export const MobileNavigation = styled.nav`
   z-index: 10;
@@ -34,8 +22,8 @@ export const StyledText = styled.p`
   color: var(--white-color);
   text-shadow: var(--small-glow-shadow);
   transition:
-    color 0.3s,
-    text-shadow 0.3s;
+    color 0.2s,
+    text-shadow 0.2s;
 `;
 
 export const StyledLink = styled(Link)`
@@ -43,8 +31,8 @@ export const StyledLink = styled(Link)`
   color: var(--white-color);
   text-shadow: var(--glow-shadow);
   transition:
-    color 0.3s,
-    text-shadow 0.3s;
+    color 0.2s,
+    text-shadow 0.2s;
 
   &:hover,
   &:focus {

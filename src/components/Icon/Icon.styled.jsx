@@ -21,7 +21,7 @@ export const Line1 = styled.div`
   height: 2px;
   background-color: var(--gray-color);  
   box-shadow: var(--small-glow-shadow);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   ${props => (props.$isOpen ? 'transform: rotate(45deg) translate(2px, 8px);' : '')}
 `;
 
@@ -31,6 +31,6 @@ bottom: 0;
   height: 2px;
   box-shadow: var(--small-glow-shadow);
   background-color: var(--gray-color);  
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   ${props => (props.$isOpen ? 'transform: rotate(-45deg) translate(2px, -8px);' : '')}
 `;

@@ -6,6 +6,7 @@ export const GlobalCSS = createGlobalStyle`
   --main-bg-color: #0a0a0a;
   --second-bg-color: #1a1a1a;
   --accent-color: #d3e97a;
+  --warning-color: #ff5100;
   --weak-accent-color: #d3e97a25;
   --white-color: #ffffff;
   --gray-color: #c7c7c7;

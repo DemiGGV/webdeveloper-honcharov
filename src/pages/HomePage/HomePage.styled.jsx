@@ -5,3 +5,9 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 64px;
 `;
+
+export const LinkWrapper = styled.div`
+  position: sticky;
+  top: 16px;
+  margin-left: auto;
+`;

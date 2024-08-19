@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.section`
-
+  padding-top: 64px;
+  border-top: 1px solid var(--second-bg-color);
 `;
 
 export const SectionHeader = styled.div`
@@ -28,8 +29,8 @@ export const ProjectsList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 64px;
-  
-  @media screen and (min-width: 1440px){
+
+  @media screen and (min-width: 1440px) {
     gap: 140px;
   }
 `;

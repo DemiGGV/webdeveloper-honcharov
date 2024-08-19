@@ -23,16 +23,16 @@ export const Header = () => {
 
   return (
     <HeaderContainer>
-      <StyledText>Heorhii Honcharov</StyledText>
+      <StyledText>Full-stack&nbsp;Developer</StyledText>
       <MobileMenu toggleMobileMenu = { toggleMobileMenu } isOpen = { isMobMenuOpen }/>
       <Navigation>
-        <StyledLink smooth to="#work">
+        <StyledLink smooth to="/#work">
           Work
         </StyledLink>
-        <StyledLink smooth to="#about">
+        <StyledLink smooth to="/#about">
           About
         </StyledLink>
-        <StyledLink smooth to="#contact">
+        <StyledLink smooth to="/#contact">
           Contact
         </StyledLink>
       </Navigation>

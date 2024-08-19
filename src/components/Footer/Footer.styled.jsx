@@ -10,9 +10,8 @@ export const StyledText = styled.p`
   font-size: 18px;
   line-height: 1;
   letter-spacing: -0.01em;
-  color: #c7c7c7;
 
-  text-align: left;
+  text-align: right;
   display: block;
   color: var(--white-color);
   text-shadow: var(--small-glow-shadow);

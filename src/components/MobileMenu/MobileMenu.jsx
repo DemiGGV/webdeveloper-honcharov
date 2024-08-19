@@ -16,9 +16,9 @@ export const MobileMenu = ({ toggleMobileMenu, isOpen }) => {
       <MobileNavigation className={isOpen ? '' : 'visually-hidden'} >
         <MobileMenuWrapper>
           <StyledText>Mobile menu:</StyledText>
-          <StyledLink smooth to="#work">Work</StyledLink>
-          <StyledLink smooth to="#about">About</StyledLink>
-          <StyledLink smooth to="#contact">Contact</StyledLink>
+          <StyledLink smooth to="/#work">Work</StyledLink>
+          <StyledLink smooth to="/#about">About</StyledLink>
+          <StyledLink smooth to="/#contact">Contact</StyledLink>
         </MobileMenuWrapper>
       </MobileNavigation>
     </>

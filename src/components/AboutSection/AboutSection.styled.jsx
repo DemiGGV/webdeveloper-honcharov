@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
+export const Container = styled.section`
   padding-top: 64px;
   border-top: 1px solid var(--second-bg-color);
   border-bottom: 1px solid var(--second-bg-color);

@@ -1,9 +1,8 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Container = styled.div`
 
 @media screen and (min-width: 768px) {
-    padding-top: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +10,6 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: 1440px) {
-    padding-top: 90px;
     gap: 80px;
   }
 `;

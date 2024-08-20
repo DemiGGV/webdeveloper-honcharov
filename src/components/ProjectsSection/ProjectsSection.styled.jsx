@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Container = styled.section`
   padding-top: 64px;
@@ -18,6 +18,13 @@ export const TitleSection = styled.h2`
   line-height: 1;
   letter-spacing: -0.02em;
   color: var(--white-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 58px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 76px;
+  }
 `;
 export const SubTitleSection = styled.p`
   font-weight: 400;

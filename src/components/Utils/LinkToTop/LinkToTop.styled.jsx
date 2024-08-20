@@ -1,7 +1,8 @@
 import { HashLink } from 'react-router-hash-link';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Link = styled(HashLink)`
+  z-index: 5;
   font-weight: 700;
   font-size: 16px;
   line-height: 1;

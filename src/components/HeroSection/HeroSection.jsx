@@ -1,5 +1,5 @@
-import { ResponsiveImage } from '../ResponsiveImg/ResponsiveImg.jsx';
-import { ActionBox } from '../ActionBox/ActionBox.jsx'
+import { ResponsiveImage } from '../Utils/ResponsiveImg/ResponsiveImg.jsx';
+import { ActionBox } from '../Utils/ActionBox/ActionBox.jsx'
 import { 
   Title,
   SubText,
@@ -15,7 +15,7 @@ export const HeroSection = ({ id }) => {
           A Stuttgart based fullstack developer passionate about building
           accessible and user friendly websites with React.js and Node.js.
         </SubText>
-        <ActionBox/>
+        <ActionBox download={false} />
       </SubContainer>
       <ResponsiveImage
         imgName="hero"

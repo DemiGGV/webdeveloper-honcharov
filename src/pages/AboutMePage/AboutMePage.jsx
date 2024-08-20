@@ -1,20 +1,18 @@
 import { useState, useEffect } from 'react';
-import { LinkToTop } from '../../components/LinkToTop/LinkToTop.jsx';
+import { LinkToTop } from '../../components/Utils/LinkToTop/LinkToTop.jsx';
 import { HeroAboutSection } from '../../components/HeroAboutSection/HeroAboutSection.jsx';
-import { AboutSection } from '../../components/AboutSection/AboutSection';
-import { ContactSection } from '../../components/ContactSection/ContactSection';
+import { CapabilitiesSection } from '../../components/CapabilitiesSection/CapabilitiesSection';
+import { ExperienceSection } from '../../components/ExperienceSection/ExperienceSection';
 
 import { Container, LinkWrapper } from './AboutMePage.styled';
+import { EducationSection } from '../../components/EducationSection/EducationSection.jsx';
 
 export const AboutMePage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-
   const handleScroll = () => {
     const scrolled = window.scrollY > 450;
     setIsScrolled(scrolled);
-    console.log('scroll', scrolled);
   };
-
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -25,13 +23,13 @@ export const AboutMePage = () => {
 
   return (
     <Container>
-      <LinkWrapper className={isScrolled ? '' : 'visually-hidden'}>
+      <LinkWrapper $isScrolled={isScrolled}>
         <LinkToTop />
       </LinkWrapper>
-
       <HeroAboutSection/>
-      <AboutSection/>
-      <ContactSection/>
+      <CapabilitiesSection/>
+      <ExperienceSection/>
+      <EducationSection/>
     </Container>
   );
 };

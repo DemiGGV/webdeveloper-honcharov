@@ -1,4 +1,4 @@
-import { ResponsiveImage } from '../ResponsiveImg/ResponsiveImg.jsx';
+import { ResponsiveImage } from '../Utils/ResponsiveImg/ResponsiveImg.jsx';
 import {
   Title,
   SubTitle,
@@ -26,7 +26,7 @@ export const AboutSection = ({ id }) => {
           Designing. While I`m not programming, i enjoy cycling, astronomy, and
           learning new things. Learning all the time to improve my skills.
         </SubText>
-        <LinkStyled to="about-me">More about me</LinkStyled>
+        <LinkStyled to="/about-me">More about me</LinkStyled>
       </SubContainer>
       <ImageWrapper>
         <ResponsiveImage

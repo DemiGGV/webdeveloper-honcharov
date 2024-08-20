@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -23,6 +23,23 @@ export const StyledText = styled.p`
 `;
 
 export const ContactButton = styled(Link)`
+  height: 48px;
+  padding: 0 4px 0 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  border-radius: 48px;
+  background-color: var(--accent-color);
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: var(--white-color);
+    box-shadow: var(--small-glow-shadow);
+  }
+`;
+export const DownloadButton = styled.a`
   height: 48px;
   padding: 0 4px 0 16px;
 

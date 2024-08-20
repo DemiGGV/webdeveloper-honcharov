@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 // SubContainer
 export const SubContainer = styled.div`

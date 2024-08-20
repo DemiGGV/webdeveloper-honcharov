@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Container = styled.section`
   display: flex;
@@ -15,6 +15,7 @@ export const Container = styled.section`
 export const TextContainer = styled.div`
   flex: 1;
 `;
+
 export const ContactHeader = styled.div`
   display: flex;
   flex-direction: column;
@@ -28,9 +29,13 @@ export const SectionTitle = styled.h2`
   font-size: 43px;
   line-height: 1;
   margin-bottom: 16px;
+  color: var(--white-color);
+  
   @media screen and (min-width: 768px) {
+    font-size: 58px;
+  }
+  @media screen and (min-width: 1440px) {
     font-size: 76px;
-    line-height: 1;
   }
 `;
 

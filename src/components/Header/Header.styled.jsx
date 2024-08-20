@@ -1,4 +1,3 @@
-// import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
 
@@ -15,11 +14,10 @@ export const Navigation = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
   }
 `;
 
-export const StyledText = styled.p`
+export const StyledLogo = styled(Link)`
   padding: 20px 0;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;

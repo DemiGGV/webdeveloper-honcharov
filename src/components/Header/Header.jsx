@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { MobileMenu } from '../MobileMenu/MobileMenu.jsx';
+import { MobileMenu } from './MobileMenu/MobileMenu.jsx';
 import {
   HeaderContainer,
-  StyledText,
+  StyledLogo,
   Navigation,
   StyledLink,
 } from './Header.styled';
@@ -18,12 +18,12 @@ export const Header = () => {
 
   useEffect(() => {
     setIsMobMenuOpen(false)
-  }, [location.hash]);
+  }, [location.hash, location.pathname]);
 
 
   return (
     <HeaderContainer>
-      <StyledText>Full-stack&nbsp;Developer</StyledText>
+      <StyledLogo smooth to="/#">Full-stack&nbsp;Developer</StyledLogo>
       <MobileMenu toggleMobileMenu = { toggleMobileMenu } isOpen = { isMobMenuOpen }/>
       <Navigation>
         <StyledLink smooth to="/#work">
@@ -34,6 +34,9 @@ export const Header = () => {
         </StyledLink>
         <StyledLink smooth to="/#contact">
           Contact
+        </StyledLink>
+        <StyledLink to="/about-me">
+          Details
         </StyledLink>
       </Navigation>
     </HeaderContainer>

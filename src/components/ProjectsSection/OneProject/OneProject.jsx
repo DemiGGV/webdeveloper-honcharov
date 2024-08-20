@@ -1,4 +1,5 @@
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { useState } from 'react';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import {
   Project,
   ProjectCard,
@@ -9,9 +10,11 @@ import {
   ProjectLink,
   ImageWraper,
 } from './OneProject.styled';
-import { ImageComponent } from '../ImageComponent/ImageComponent';
+import { ImageComponent } from '../../Utils/ImageComponent/ImageComponent';
+import { ModalProject } from '../ModalProject/ModalProject';
 
-export const OneProject = ({ handleModalOpen,
+export const OneProject = ({
+  id,
   title = 'Unknown',
   image = 'placeholder',
   alt = 'Can`t find image',
@@ -19,10 +22,29 @@ export const OneProject = ({ handleModalOpen,
   skills = 'Empty',
   link = 'Empty',
 }) => {
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsOpen(true);
+  };
+  const handleCloseModal = () => {
+    setIsOpen(false);
+  };
 
   return (
     <Project>
-      <ImageWraper onClick={()=>handleModalOpen(title,image,description)}>
+      <ModalProject
+        id={id}
+        handleCloseModal={handleCloseModal}
+        modalIsOpen={modalIsOpen}
+        title={title}
+        image={image}
+        alt={alt}
+        description={description}
+        skills={skills}
+        link={link}
+      />
+      <ImageWraper onClick={() => handleOpenModal()}>
         <ImageComponent imgName={image} alt={alt} maxHeight="400" />
       </ImageWraper>
       <ProjectCard>
@@ -32,7 +54,8 @@ export const OneProject = ({ handleModalOpen,
         <ProjectSkills>{skills}</ProjectSkills>
         <ProjectSubTitle>Link:</ProjectSubTitle>
         <ProjectLink href={link} target="_blank" rel="noopener noreferrer">
-        {title}<FaExternalLinkAlt />
+          {title}
+          <FaExternalLinkAlt />
         </ProjectLink>
       </ProjectCard>
     </Project>

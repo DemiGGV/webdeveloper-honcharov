@@ -1,18 +1,34 @@
-import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5';
+import { IoLogoLinkedin, IoLogoGithub, IoDownloadOutline } from 'react-icons/io5';
 import { IoIosSend } from 'react-icons/io';
 import {
   Container,
   ContactButton,
+  DownloadButton,
   StyledText,
   RoundButton,
   Icon,
   IconSend,
 } from './ActionBox.styled.jsx';
 
-export const ActionBox = () => {
+export const ActionBox = ({download}) => {
+  const publicUrl = import.meta.env.BASE_URL;
   return (
     <Container>
-      <ContactButton to="#contact">
+      {download ?
+      <DownloadButton href={`${publicUrl}/assets/Resume-EN-Git.pdf`} download>
+        <StyledText>Download&nbsp;resume</StyledText>
+        <IconSend>
+          <IoDownloadOutline
+            style={{
+              color: '#d3e97a',
+              width: '24px',
+              height: '24px',
+            }}
+          />
+        </IconSend>
+      </DownloadButton>
+      :
+      <ContactButton to="/#contact">
         <StyledText>Contact&nbsp;Me</StyledText>
         <IconSend>
           <IoIosSend
@@ -24,6 +40,7 @@ export const ActionBox = () => {
           />
         </IconSend>
       </ContactButton>
+      }
       <RoundButton
         href={'https://www.linkedin.com/in/heorhii-honcharov/'}
         target="_blank"

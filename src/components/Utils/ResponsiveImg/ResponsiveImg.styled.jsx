@@ -1,11 +1,12 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const PictureStyled = styled.picture`
-  display: flex;
   padding: 20px 20px 0 20px;
   width: 100%;
-  max-width: 343px;
   margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
   background-color: var(--gray-color);
   border-radius: 16px;
   overflow: hidden;
@@ -13,7 +14,6 @@ export const PictureStyled = styled.picture`
   @media screen and (min-width: 768px) {
     min-width: fit-content;
     height: 400px;
-    max-width: 655px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -24,8 +24,5 @@ export const PictureStyled = styled.picture`
 
 export const ImgStyled = styled.img`
   width: 100%;
-  object-fit: cover;
-  @media screen and (min-width: 768px) and (max-width: 1439px){
-    width: 300px;    
-  }
+  object-fit: contain;
 `;

@@ -43,6 +43,7 @@ export const StyledLink = styled(Link)`
 
 export const MobileMenuWrapper = styled.div`
   position: absolute;
+  margin-top: 45px;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);

@@ -5,7 +5,7 @@ import { AboutSection } from '../../components/AboutSection/AboutSection';
 import { ContactSection } from '../../components/ContactSection/ContactSection';
 
 import { Container, LinkWrapper } from './HomePage.styled';
-import { LinkToTop } from '../../components/LinkToTop/LinkToTop.jsx';
+import { LinkToTop } from '../../components/Utils/LinkToTop/LinkToTop.jsx';
 
 export const HomePage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,7 +13,6 @@ export const HomePage = () => {
   const handleScroll = () => {
     const scrolled = window.scrollY > 450;
     setIsScrolled(scrolled);
-    console.log('scroll', scrolled);
   };
 
   useEffect(() => {
@@ -25,7 +24,7 @@ export const HomePage = () => {
 
   return (
     <Container>
-      <LinkWrapper className={isScrolled ? '' : 'visually-hidden'}>
+      <LinkWrapper $isScrolled={isScrolled}>
         <LinkToTop />
       </LinkWrapper>
       <HeroSection id="hero" />

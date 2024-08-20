@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const ImageStyled = styled.img`
   ${(props) => (props.$maxHeight ? `max-height: ${props.$maxHeight}px;` : 'max-height: 400px;')}

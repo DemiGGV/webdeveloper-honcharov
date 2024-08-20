@@ -1,5 +1,5 @@
-import { ContactForm } from '../ContactForm/ContactForm';
-import { SocialsComponent } from '../SocialsComponent/SocialsComponent';
+import { ContactForm } from './ContactForm/ContactForm';
+import { SocialsComponent } from './SocialsComponent/SocialsComponent';
 import {
   Container,
   TextContainer,
@@ -9,9 +9,9 @@ import {
   InviteLink,
 } from './ContactSection.styled';
 
-const publicUrl = import.meta.env.BASE_URL;
 
 export const ContactSection = ({ id }) => {
+  const publicUrl = import.meta.env.BASE_URL;
   return (
     <Container id={id}>
       <TextContainer>
@@ -20,7 +20,7 @@ export const ContactSection = ({ id }) => {
           <InviteText>
           Say hello to me&nbsp;
             <InviteLink
-              href={'mailto:tryfel58@gmail.com'}
+              href={'mailto:heorhii.honcharov@gmail.com'}
               target="_blank"
               rel="noopener noreferrer"
             >

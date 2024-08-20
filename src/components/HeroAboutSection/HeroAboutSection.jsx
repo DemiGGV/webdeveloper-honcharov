@@ -1,28 +1,36 @@
-import { ResponsiveImage } from '../ResponsiveImg/ResponsiveImg.jsx';
-import { ActionBox } from '../ActionBox/ActionBox.jsx'
-import { 
+import { ActionBox } from '../Utils/ActionBox/ActionBox.jsx';
+import {
   Title,
+  Skills,
+  SubTitle,
   SubText,
   Container,
-  SubContainer, } from "./HeroAboutSection.styled";
+  SubContainer,
+} from './HeroAboutSection.styled';
 
-export const HeroAboutSection = ({ id }) => {
-  return (    
-      <Container id={id}>
-         <SubContainer>
-        <Title>Hi, i am Heorhii Honcharov</Title>
+export const HeroAboutSection = () => {
+  return (
+    <Container>
+      <div>
+      <Title>About&nbsp;me</Title>
+      <Skills>Key skills: HTML, CSS, JavaScript, TypeScript, React, Node.js</Skills>
+      </div>
+      <SubContainer>
+        
+        <SubTitle>
+          I am a full-stack developer based in Stuttgart. Have a background as a
+          technical engineer.
+        </SubTitle>
         <SubText>
-          A Stuttgart based fullstack developer passionate about building
-          accessible and user friendly websites with React.js and Node.js.
+          I am a frontend developer living in Stuttgart, looking for interesting
+          opportunities. Have a background as a technical engineer. I like to
+          focus on accessibility in development. Passionate and curious about
+          problem solving. Currently learning Reactjs, Webflow and a bit of
+          Designing. While I`m not programming, i enjoy cycling, astronomy, and
+          learning new things. Learning all the time to improve my skills.
         </SubText>
-        <ActionBox/>
+        <ActionBox download={true}/>
       </SubContainer>
-      <ResponsiveImage
-        imgName="hero"
-        alt="Photo by Heorhii Honcharov - Fullstack Developer"
-        maxHeight="400"
-        ext="png"
-      />
-      </Container>
+    </Container>
   );
 };

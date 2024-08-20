@@ -1099,22 +1099,27 @@ attempted value: ${l}
   line-height: 1.3;
   letter-spacing: -0.01em;
   color: var(--white-color);
+  flex: 1;
 
   @media screen and (min-width: 768px) {
     font-size: 24px;
   }
 `,Nf=$.p`
+  text-align: right;
   font-size: 16px;
   line-height: 1.6;
   color: var(--gray-color);
-  
+  flex: 1;
+
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.5;
   }
 `,D3=$(Nf)`
+  text-align: left;
   color: var(--accent-color);
 `,z3=$(Nf)`
+  text-align: left;
 `,P0=({data:e})=>{const{company:t,profession:n,time:r,description:o}=e;return g.jsxs(N3,{children:[g.jsxs(M3,{children:[g.jsx(L3,{children:n}),g.jsx(Nf,{children:r})]}),g.jsx(D3,{children:t}),g.jsx(z3,{children:o})]})},U3=$.section`
   border-top: 1px solid var(--second-bg-color);
   display: flex;

@@ -29,6 +29,7 @@ export const Profession = styled.h4`
   line-height: 1.3;
   letter-spacing: -0.01em;
   color: var(--white-color);
+  flex: 1;
 
   @media screen and (min-width: 768px) {
     font-size: 24px;
@@ -36,10 +37,12 @@ export const Profession = styled.h4`
 `;
 // Time,
 export const Time = styled.p`
+  text-align: right;
   font-size: 16px;
   line-height: 1.6;
   color: var(--gray-color);
-  
+  flex: 1;
+
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.5;
@@ -47,8 +50,10 @@ export const Time = styled.p`
 `;
 // Company,
 export const Company = styled(Time)`
+  text-align: left;
   color: var(--accent-color);
 `;
 // Description
 export const Description = styled(Time)`
+  text-align: left;
 `;

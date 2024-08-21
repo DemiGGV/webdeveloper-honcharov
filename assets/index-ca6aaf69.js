@@ -669,17 +669,24 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof e.getDerivedStat
   @media screen and (min-width: 768px) {
     height: fit-content;
   }
-`,zE=O.h4`
+`,zE=O.a`
+  margin: 5px;
   padding: 8px 20px;
+
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   text-transform: uppercase;
+  
   color: var(--white-color);
+  background-color: var(--weak-accent-color);
+
+  border-radius: 5px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--weak-accent-color);
+  
   transition: all 0.2s ease;
   cursor: pointer;
 
@@ -688,7 +695,7 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof e.getDerivedStat
     color: var(--main-bg-color);
     box-shadow: var(--small-glow-shadow);
   }
-`,UE=O.a`
+`,UE=O.p`
   padding: 12px;
   display: flex;
   gap: 8px;
@@ -1027,7 +1034,7 @@ attempted value: ${l}
     color: var(--accent-color);
     text-shadow: var(--small-glow-shadow);
   }
-`,A0=()=>g.jsx(_3,{smooth:!0,to:"/#",children:"Scroll To Top"}),b3=()=>{const[e,t]=w.useState(!1),n=()=>{const r=window.scrollY>450;t(r)};return w.useEffect(()=>(window.addEventListener("scroll",n),()=>{window.removeEventListener("scroll",n)}),[]),g.jsxs(k3,{children:[g.jsx(C3,{$isScrolled:e,children:g.jsx(A0,{})}),g.jsx(d2,{id:"hero"}),g.jsx(XE,{id:"work"}),g.jsx(ik,{id:"about"}),g.jsx(E3,{id:"contact"})]})},T3=O.div`
+`,A0=({link:e})=>g.jsx(_3,{smooth:!0,to:e,children:"Scroll To Top"}),b3=()=>{const[e,t]=w.useState(!1),n=()=>{const r=window.scrollY>450;t(r)};return w.useEffect(()=>(window.addEventListener("scroll",n),()=>{window.removeEventListener("scroll",n)}),[]),g.jsxs(k3,{children:[g.jsx(C3,{$isScrolled:e,children:g.jsx(A0,{link:"/#"})}),g.jsx(d2,{id:"hero"}),g.jsx(XE,{id:"work"}),g.jsx(ik,{id:"about"}),g.jsx(E3,{id:"contact"})]})},T3=O.div`
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -1353,7 +1360,7 @@ attempted value: ${l}
   border: 1px solid var(--gray-color);
   border-radius: 30px;
   box-shadow: var(--small-glow-shadow);
-`;const iO=()=>g.jsx(tO,{children:g.jsxs(nO,{children:[g.jsx(rO,{children:"My Education"}),g.jsx(oO,{children:qE.map((e,t)=>g.jsx("li",{children:g.jsx(R0,{data:e})},t))})]})}),lO=()=>{const{pathname:e}=lr();return w.useEffect(()=>{window.scrollTo(0,0)},[e]),null},aO=()=>{const[e,t]=w.useState(!1),n=()=>{const r=window.scrollY>450;t(r)};return w.useEffect(()=>(window.addEventListener("scroll",n),()=>{window.removeEventListener("scroll",n)}),[]),g.jsxs(J3,{children:[g.jsx(lO,{}),g.jsx(eO,{$isScrolled:e,children:g.jsx(A0,{})}),g.jsx(R3,{}),g.jsx(B3,{}),g.jsx(Z3,{}),g.jsx(iO,{})]})},sO=O.div`
+`;const iO=()=>g.jsx(tO,{children:g.jsxs(nO,{children:[g.jsx(rO,{children:"My Education"}),g.jsx(oO,{children:qE.map((e,t)=>g.jsx("li",{children:g.jsx(R0,{data:e})},t))})]})}),lO=()=>{const{pathname:e}=lr();return w.useEffect(()=>{window.scrollTo(0,0)},[e]),null},aO=()=>{const[e,t]=w.useState(!1),n=()=>{const r=window.scrollY>450;t(r)};return w.useEffect(()=>(window.addEventListener("scroll",n),()=>{window.removeEventListener("scroll",n)}),[]),g.jsxs(J3,{children:[g.jsx(lO,{}),g.jsx(eO,{$isScrolled:e,children:g.jsx(A0,{link:"/about-me/#"})}),g.jsx(R3,{}),g.jsx(B3,{}),g.jsx(Z3,{}),g.jsx(iO,{})]})},sO=O.div`
   display: flex;
   justify-content: center;
   align-items: center;

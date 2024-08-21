@@ -1014,12 +1014,12 @@ attempted value: ${l}
   flex-direction: column;
   gap: 64px;
 `,C3=O.div`
+z-index: 5;
   ${e=>e.$isScrolled?"":"display: none"};
   position: sticky;
   top: 16px;
   margin-left: auto;
 `,_3=O(Pa)`
-  z-index: 5;
   font-weight: 700;
   font-size: 16px;
   line-height: 1;

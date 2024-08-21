@@ -16,7 +16,7 @@ export const data = [
     image: 'projects/Mixmasters-back',
     alt: 'Mixmasters-API project picture',
     description:
-      "This is the Mixmasters project's server-side. It's built using the Express framework in a Node.js environment, with MongoDB as its database, and Cloudinary for image cloud storage. The server's features include: authorizing and deauthorizing users, adding their information to the database, and enabling changes to be made to them within a user collection working with the recipe collection involves: sorting existing recipes based on the frontend needs of the Mixmasters project, filtering them, adding recipes to specific users' favorites, and adding new recipes to the database.",
+      "This is the server side of the Mixmasters project. It is built using the Express framework in a Node.js environment, with MongoDB as the database and Cloudinary for cloud image storage. Server capabilities include: user authorization using JWT-tokens, sorting the recipe collection, filtering them, adding recipes to favorites of certain users, and adding new recipes by users to the database.",
     skills:
       'Node.JS/JavaScript · Express.JS · MongoDB/Mongoose · REST API · Swagger (API and tests) · Jest',
     link: 'https://mixmasters.onrender.com/api-docs/',

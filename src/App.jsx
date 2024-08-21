@@ -6,6 +6,7 @@ import { AboutMePage } from './pages/AboutMePage/AboutMePage';
 import { ErrorPage } from './pages/ErrorPage/ErrorPage';
 import { AppWrapper } from './App.styled';
 
+
 function App() {
   return (
     <AppWrapper>

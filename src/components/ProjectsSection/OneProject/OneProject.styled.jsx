@@ -119,6 +119,7 @@ export const ProjectLink = styled.a`
   display: flex;
   gap: 8px;
   justify-content: end;
+  align-items: center;
   transition: all 0.2s ease;
 
   &:hover {

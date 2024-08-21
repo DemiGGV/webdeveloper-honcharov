@@ -30,6 +30,10 @@ export const GlobalCSS = createGlobalStyle`
   --desktop: 1440px;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   background-color: var(--main-bg-color);
 
@@ -97,4 +101,39 @@ input {
   overflow: hidden;
 }
 
+.ModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1200;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.ModalContent {
+    max-width: calc(100vw - 48px);
+    max-height: calc(100vh - 24px);
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--second-bg-color);
+
+    @media screen and (max-height: 530px) and (orientation: landscape){
+      overflow: scroll;
+    }
+    
+    @media screen and (min-width: 420px) {
+      max-width: 530px;
+    };
+  }
 `;

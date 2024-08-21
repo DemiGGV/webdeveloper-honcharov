@@ -18,16 +18,10 @@ export const ProjectsSection = ({ id }) => {
       </SectionHeader>
       <ProjectsList>
       {data.length &&
-        data.map(({ id, title, image, alt, description, skills, link }) => (
+        data.map((item) => (
           <OneProject
-            key={id}
-            id={id}
-            title={title}
-            image={image}
-            alt={alt}
-            description={description}
-            skills={skills}
-            link={link}
+            key={item.id}
+            item={item}
           />
         ))}
         </ProjectsList>

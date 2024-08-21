@@ -6,6 +6,7 @@ import { ExperienceSection } from '../../components/ExperienceSection/Experience
 
 import { Container, LinkWrapper } from './AboutMePage.styled';
 import { EducationSection } from '../../components/EducationSection/EducationSection.jsx';
+import { AutoScrollUp } from '../../components/Utils/AutoScrollUp/AutoScrollUp.jsx';
 
 export const AboutMePage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,6 +24,7 @@ export const AboutMePage = () => {
 
   return (
     <Container>
+      <AutoScrollUp/>
       <LinkWrapper $isScrolled={isScrolled}>
         <LinkToTop />
       </LinkWrapper>

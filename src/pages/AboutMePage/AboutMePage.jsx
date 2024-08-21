@@ -26,7 +26,7 @@ export const AboutMePage = () => {
     <Container>
       <AutoScrollUp/>
       <LinkWrapper $isScrolled={isScrolled}>
-        <LinkToTop />
+        <LinkToTop link="/about-me/#"/>
       </LinkWrapper>
       <HeroAboutSection/>
       <CapabilitiesSection/>

@@ -25,7 +25,7 @@ export const HomePage = () => {
   return (
     <Container>
       <LinkWrapper $isScrolled={isScrolled}>
-        <LinkToTop />
+        <LinkToTop link="/#"/>
       </LinkWrapper>
       <HeroSection id="hero" />
       <ProjectsSection id="work" />

@@ -1,7 +1,7 @@
 import { Link } from './LinkToTop.styled'
 
-export const LinkToTop = () => {
+export const LinkToTop = ({link}) => {
   return (
-    <Link smooth to="/#">Scroll&nbsp;To&nbsp;Top</Link>
+    <Link smooth to={link}>Scroll&nbsp;To&nbsp;Top</Link>
   )
 }

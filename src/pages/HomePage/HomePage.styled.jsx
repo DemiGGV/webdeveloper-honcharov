@@ -9,6 +9,7 @@ export const Container = styled.div`
 `;
 
 export const LinkWrapper = styled.div`
+z-index: 5;
   ${(props) => (props.$isScrolled ? `` : `display: none`)};
   position: sticky;
   top: 16px;

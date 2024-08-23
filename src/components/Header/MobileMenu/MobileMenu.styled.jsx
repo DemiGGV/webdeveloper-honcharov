@@ -17,15 +17,6 @@ export const MobileNavigation = styled.nav`
   }
 `;
 
-export const StyledText = styled.p`
-  display: block;
-  color: var(--white-color);
-  text-shadow: var(--small-glow-shadow);
-  transition:
-    color 0.2s,
-    text-shadow 0.2s;
-`;
-
 export const StyledLink = styled(Link)`
   padding: 8px 16px;
   color: var(--white-color);

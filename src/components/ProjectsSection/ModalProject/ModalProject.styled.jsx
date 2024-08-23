@@ -1,21 +1,27 @@
 import styled from 'styled-components';
 
+export const ButtonCloseWrapper = styled.div`
+  display: inline;
+  float: inline-end;
+  cursor: pointer;
+`;
+
 export const ImageWraper = styled.div`
   width: 100%;
   margin-bottom: 20px;
   max-height: 550px;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
+
   border-radius: 16px;
   overflow: hidden;
-  
+
   transition: all 0.2s ease;
   background-color: var(--second-bg-color);
-  
+
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
@@ -58,16 +64,16 @@ export const ProjectSubTitle = styled.a`
   font-size: 16px;
   line-height: 1.5;
   text-transform: uppercase;
-  
+
   color: var(--white-color);
   background-color: var(--weak-accent-color);
 
   border-radius: 5px;
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   transition: all 0.2s ease;
   cursor: pointer;
 

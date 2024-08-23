@@ -16,7 +16,6 @@ import {
 import { ImageComponent } from '../../Utils/ImageComponent/ImageComponent';
 import { ModalProject } from '../ModalProject/ModalProject';
 
-
 ReactModal.setAppElement('#root');
 
 export const OneProject = ({ item }) => {
@@ -27,6 +26,7 @@ export const OneProject = ({ item }) => {
     description = 'Can`t find article',
     skills = 'Empty',
     link = 'Empty',
+    linkG = 'Empty',
   } = item;
   const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -40,28 +40,37 @@ export const OneProject = ({ item }) => {
   return (
     <Project>
       <ModalProject
-          handleCloseModal={handleCloseModal}
-          modalIsOpen={modalIsOpen}
-          title={title}
-          image={image}
-          alt={alt}
-          description={description}
-          skills={skills}
-          link={link}
-        />
+        handleCloseModal={handleCloseModal}
+        modalIsOpen={modalIsOpen}
+        title={title}
+        image={image}
+        alt={alt}
+        description={description}
+        skills={skills}
+        link={link}
+      />
       <ImageWraper onClick={() => handleOpenModal()}>
         <ImageComponent imgName={image} alt={alt} maxHeight="400px" />
       </ImageWraper>
       <ProjectCard>
         <ProjectTitle>{title}</ProjectTitle>
-        <ProjectDescription>{description}</ProjectDescription>
+        <ProjectDescription  onClick={() => handleOpenModal()}>{description}</ProjectDescription>
         <ProjectSubTitle>Skills:</ProjectSubTitle>
         <ProjectSkills>{skills}</ProjectSkills>
-        <ProjectSubTitle>Link:</ProjectSubTitle>
-        <ProjectLink href={link} target="_blank" rel="noopener noreferrer">
-          {title}
-          <FaExternalLinkAlt />
-        </ProjectLink>
+        <div>
+          <ProjectSubTitle>Link:</ProjectSubTitle>
+          <ProjectLink href={link} target="_blank" rel="noopener noreferrer">
+            {title}
+            <FaExternalLinkAlt style={{ marginLeft: 8 }} />
+          </ProjectLink>
+        </div>
+        <div>
+          <ProjectSubTitle>Link:</ProjectSubTitle>
+          <ProjectLink href={linkG} target="_blank" rel="noopener noreferrer">
+            GitHUB&nbsp;link
+            <FaExternalLinkAlt style={{ marginLeft: 8 }} />
+          </ProjectLink>
+        </div>
       </ProjectCard>
     </Project>
   );

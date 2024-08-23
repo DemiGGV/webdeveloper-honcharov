@@ -1,8 +1,9 @@
 import ReactModal from 'react-modal';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { IoCloseOutline, IoOpenOutline } from 'react-icons/io5';
 
 import {
+  ButtonCloseWrapper,
   ImageWraper,
   ProjectCard,
   ProjectTitle,
@@ -21,7 +22,6 @@ export const ModalProject = ({
   description,
   link,
 }) => {
-
   return (
     <ReactModal
       contentLabel="Modal window"
@@ -34,8 +34,16 @@ export const ModalProject = ({
       onAfterOpen={() => disableBodyScroll(document)}
       onAfterClose={() => enableBodyScroll(document)}
     >
+      <ButtonCloseWrapper onClick={() => handleCloseModal()}>
+        <IoCloseOutline style={{ height: 32, width: 32 }} />
+      </ButtonCloseWrapper>
       <ImageWraper>
-        <ImageComponent imgName={image} alt={alt} maxHeight="100%" height="100%"/>
+        <ImageComponent
+          imgName={image}
+          alt={alt}
+          maxHeight="100%"
+          height="100%"
+        />
       </ImageWraper>
       <ProjectCard>
         <ProjectTitle>{title}</ProjectTitle>
@@ -44,7 +52,7 @@ export const ModalProject = ({
           Link:
           <ProjectLink>
             {title}
-            <FaExternalLinkAlt />
+            <IoOpenOutline />
           </ProjectLink>
         </ProjectSubTitle>
       </ProjectCard>

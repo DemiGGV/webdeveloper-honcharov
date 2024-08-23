@@ -21,31 +21,20 @@ export const Project = styled.li`
 `;
 
 export const ImageWraper = styled.div`
-  width: 100%;
-  padding: 40px 20px;
+  max-width: 100%;
+  padding: 20px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
 
+  flex: 1;
   cursor: pointer;
 
   transition: all 0.2s ease;
   background-color: var(--second-bg-color);
 
   @media screen and (min-width: 768px) {
-    height: 450px;
-    padding: 60px 20px;
     min-width: 380px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    padding: 60px 30px;
-    height: 495px;
   }
 
   &:hover {
@@ -54,17 +43,11 @@ export const ImageWraper = styled.div`
 `;
 
 export const ProjectCard = styled.div`
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
-
-  @media screen and (min-width: 768px) {
-    max-width: 300px;
-    max-height: 450px;
-  }
-  @media screen and (min-width: 1440px) {
-    max-width: 550px;
-  }
+  min-width: min-content;
 `;
 
 export const ProjectTitle = styled.h3`
@@ -79,15 +62,16 @@ export const ProjectSubTitle = styled.h4`
   font-size: 16px;
   line-height: 1.5;
   text-transform: uppercase;
-  margin-right: 8px;
   color: var(--white-color);
+  display: inline;
 `;
 
 export const ProjectDescription = styled.p`
-  height: 150px;
+  max-height: 150px;
   overflow: hidden;
   position: relative;
   border-bottom: 1px solid var(--gray-color);
+  cursor: pointer;
 
   &:after {
     content: '';
@@ -98,13 +82,13 @@ export const ProjectDescription = styled.p`
     height: 50px;
     background: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0),
-      var(--second-bg-color) 100%
+      transparent,
+      black 100%
     );
   }
 
-  @media screen and (min-width: 768px) {
-    height: fit-content;
+  @media screen and (min-width: 1440px) {
+    max-height: 250px;
   }
 `;
 
@@ -114,12 +98,10 @@ export const ProjectSkills = styled.p`
 `;
 
 export const ProjectLink = styled.a`
+  margin-left: auto;
+  margin-right: 0;
+  display: inline;
   padding: 12px;
-  border-bottom: 1px solid var(--gray-color);
-  display: flex;
-  gap: 8px;
-  justify-content: end;
-  align-items: center;
   transition: all 0.2s ease;
 
   &:hover {

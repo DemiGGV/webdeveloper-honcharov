@@ -20,7 +20,6 @@ export const HeroSection = ({ id }) => {
       <ResponsiveImage
         imgName="hero"
         alt="Photo by Heorhii Honcharov - Fullstack Developer"
-        maxHeight="400"
         ext="png"
       />
       </Container>

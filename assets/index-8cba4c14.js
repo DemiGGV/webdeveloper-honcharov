@@ -322,8 +322,7 @@ PERFORMANCE OF THIS SOFTWARE.
     color 0.2s,
     text-shadow 0.2s;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: var(--white-color);
     text-shadow: var(--hover-shadow);
   }

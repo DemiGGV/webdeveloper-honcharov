@@ -1,0 +1,27 @@
+@mixin hover-active {
+    @media (hover: hover) {
+        button:hover {
+            color: var(--accent-color);
+            box-shadow: var(--small-shadow-glow);
+        }
+    }
+    @media (hover: none) {
+        button:active {
+            color: var(--accent-color);
+            box-shadow: var(--small-shadow-glow);
+        }
+    }
+}
+
+@media (hover: hover) {
+    button:hover {
+        color: var(--accent-color);
+        box-shadow: var(--small-shadow-glow);
+    }
+}
+@media (hover: none) {
+    button:active {
+        color: var(--accent-color);
+        box-shadow: var(--small-shadow-glow);
+    }
+}

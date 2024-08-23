@@ -26,11 +26,14 @@ export const ContactButton = styled(Link)`
   height: 48px;
   padding: 0 4px 0 16px;
 
+  line-height: 1;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 4px;
-  border-radius: 48px;
+
+  border-radius: 50px;
   background-color: var(--accent-color);
   transition: all 0.2s ease;
 
@@ -39,6 +42,7 @@ export const ContactButton = styled(Link)`
     box-shadow: var(--small-glow-shadow);
   }
 `;
+
 export const DownloadButton = styled.a`
   height: 48px;
   padding: 0 4px 0 16px;

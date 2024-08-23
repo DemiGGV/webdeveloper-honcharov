@@ -1,14 +1,14 @@
-import styled from 'styled-components';
-import { Field } from 'formik';
+import styled from '@emotion/styled';
+import { Field, Form } from 'formik';
 
-export const FormContainer = styled.div`
+export const FormContainer = styled(Form)`
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 32px;
 `;
 
-export const LabelDiv = styled.div`
+export const LabelDiv = styled.label`
   position: relative;
 `;
 
@@ -60,7 +60,7 @@ export const ErrorField = styled.div`
   padding: 0 10px;
 
   position: absolute;
-  top: 25%;
+  top: 10px;
   right: 6px;
 
   color: var(--warning-color);
@@ -68,8 +68,9 @@ export const ErrorField = styled.div`
 `;
 
 export const SubmitButton = styled.button`
+  height: 48px;
+  padding: 0 25px;
   border-radius: 50px;
-  padding: 20px 40px;
   max-width: fit-content;
   outline: none;
   border: none;
@@ -84,7 +85,15 @@ export const SubmitButton = styled.button`
   line-height: 1;
   text-transform: uppercase;
 
-  &:hover {
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+
+  &:disabled{
+    background-color: var(--second-bg-color);
+    cursor: not-allowed;
+  }
+  &:hover:not(:disabled) {
     box-shadow: var(--small-glow-shadow);
   }
 `;

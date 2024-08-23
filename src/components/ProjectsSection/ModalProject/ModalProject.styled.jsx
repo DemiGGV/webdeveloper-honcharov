@@ -58,23 +58,23 @@ export const ProjectDescription = styled.p`
 `;
 
 export const ProjectSubTitle = styled.a`
-  margin: 5px;
-  padding: 8px 50px;
+  height: 48px;
+  padding: 0 25px;
+  border-radius: 50px;
+  max-width: fit-content;
 
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-transform: uppercase;
-
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   color: var(--main-bg-color);
   background-color: var(--accent-color);
-
-  border-radius: 50px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
 
   transition: all 0.2s ease;
   cursor: pointer;
@@ -90,5 +90,4 @@ export const ProjectLink = styled.p`
   gap: 8px;
   justify-content: end;
   align-items: center;
-  
 `;

@@ -28,7 +28,7 @@ export const ActionBox = ({download}) => {
         </IconSend>
       </DownloadButton>
       :
-      <ContactButton to="/#contact">
+      <ContactButton smooth to="/#contact">
         <StyledText>Contact&nbsp;Me</StyledText>
         <IconSend>
           <IoIosSend

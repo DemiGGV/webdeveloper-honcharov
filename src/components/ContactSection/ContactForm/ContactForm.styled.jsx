@@ -5,7 +5,7 @@ export const FormContainer = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 32px;
 `;
 
 export const LabelDiv = styled.div`
@@ -64,7 +64,6 @@ export const ErrorField = styled.div`
   right: 6px;
 
   color: var(--warning-color);
-  text-shadow: var(--white-color) 3px 0 10px;
   border-radius: 15px;
 `;
 

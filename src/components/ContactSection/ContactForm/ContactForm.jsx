@@ -89,7 +89,7 @@ export const ContactForm = () => {
             placeholder="Input your Message"
             rows="5"
             autoComplete="off"
-            resize= 'none'
+            $resize= 'none'
           />
           <ErrorMessage component={ErrorField} name="message" />
         </LabelDiv>

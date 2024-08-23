@@ -11,19 +11,17 @@ export const Container = styled.section`
     justify-content: center;
     align-items: flex-start;
     gap: 200px;
-    height: 500px;
   }
 
   @media screen and (min-width: 1440px) {
     gap: 280px;
-    height: 900px;
   }
 `;
 
 export const SubContainer = styled.div`
   margin-bottom: 64px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
+    margin-bottom: 20px;
     flex-shrink: 2;
     display: flex;
     flex-direction: column;
@@ -76,27 +74,8 @@ export const SubText = styled.p`
   color: var(--gray-color);
   margin-bottom: 32px;
 
-  height: 100px;
-  overflow: hidden;
-  position: relative;
-
   @media screen and (min-width: 768px) {
     margin-bottom: 53px;
-  }
-  @media screen and (max-width: 767px) {
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 50px;
-      background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0),
-        var(--second-bg-color) 100%
-      );
-    }
   }
   @media screen and (min-width: 1440px) {
     font-size: 18px;

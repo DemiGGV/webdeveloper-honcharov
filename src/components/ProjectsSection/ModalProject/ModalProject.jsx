@@ -41,7 +41,7 @@ export const ModalProject = ({
         <ImageComponent
           imgName={image}
           alt={alt}
-          maxHeight="100%"
+          maxHeight="calc(100% - 80px)"
           height="100%"
         />
       </ImageWraper>

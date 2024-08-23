@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const ButtonCloseWrapper = styled.div`
   display: inline;
   float: inline-end;
+  line-height: 1;
   cursor: pointer;
 `;
 
 export const ImageWraper = styled.div`
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   max-height: 550px;
 
   display: flex;
@@ -30,7 +31,7 @@ export const ImageWraper = styled.div`
 export const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   border-radius: 5px;
   overflow: hidden;
   @media screen and (min-width: 768px) {
@@ -48,7 +49,7 @@ export const ProjectTitle = styled.h3`
 
 export const ProjectDescription = styled.p`
   padding: 0 8px;
-  border-bottom: 1px solid var(--gray-color);
+  /* border-bottom: 1px solid var(--gray-color); */
   padding-bottom: 5px;
 
   @media screen and (min-width: 768px) {
@@ -58,28 +59,27 @@ export const ProjectDescription = styled.p`
 
 export const ProjectSubTitle = styled.a`
   margin: 5px;
-  padding: 8px 20px;
+  padding: 8px 50px;
 
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   text-transform: uppercase;
 
-  color: var(--white-color);
-  background-color: var(--weak-accent-color);
+  color: var(--main-bg-color);
+  background-color: var(--accent-color);
 
-  border-radius: 5px;
+  border-radius: 50px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+
   transition: all 0.2s ease;
   cursor: pointer;
 
   &:hover {
-    background-color: var(--accent-color);
-    color: var(--main-bg-color);
     box-shadow: var(--small-glow-shadow);
   }
 `;
@@ -90,4 +90,5 @@ export const ProjectLink = styled.p`
   gap: 8px;
   justify-content: end;
   align-items: center;
+  
 `;

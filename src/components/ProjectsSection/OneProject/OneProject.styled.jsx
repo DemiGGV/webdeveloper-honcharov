@@ -34,6 +34,12 @@ export const ImageWraper = styled.div`
   background-color: var(--second-bg-color);
 
   @media screen and (min-width: 768px) {
+    padding: 60px 20px;
+    min-width: 380px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 20px;
     min-width: 380px;
   }
 

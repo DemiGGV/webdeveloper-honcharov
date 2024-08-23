@@ -120,12 +120,12 @@ input {
 
 .ModalContent {
     max-width: calc(100vw - 48px);
-    max-height: calc(100vh - 24px);
-    padding: 8px;
+    max-height: calc(100dvh - 24px);
+    padding: 4px 15px 15px 15px;
     outline: none;
     border: none;
     border-radius: 5px;
-    overflow: hidden;
+    overflow: auto;
     background-color: var(--second-bg-color);
 
     @media screen and (max-height: 530px) and (orientation: landscape){
@@ -133,7 +133,11 @@ input {
     }
     
     @media screen and (min-width: 420px) {
-      max-width: 530px;
+      max-width: 400px;
+    };
+    
+    @media screen and (min-width: 768px) {
+      max-width: 550px;
     };
   }
 `;

@@ -138,7 +138,7 @@ input {
     };
     
     @media screen and (min-width: 768px) {
-      max-width: 550px;
+      max-width: 560px;
     };
   }
 `;

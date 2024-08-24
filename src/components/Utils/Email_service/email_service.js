@@ -15,14 +15,12 @@ emailjs.init({
 });
 
 export const email_send = (email) => {
-  console.log(publicKey, serviceId, templateId)
   emailjs.send(serviceId, templateId, email).then(
     () => {
       toast.success('Sending an email - SUCCESS!');
     },
-    (e) => {
+    () => {
       toast.error(`Sending an email - ERROR!`);
-      console.log(e)
     },
   );
 };

@@ -60,7 +60,15 @@ export const InviteLink = styled.a`
     font-size: 18px;
     line-height: 1.5;
   }
-  &:hover {
-    color: var(--accent-color);
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      color: var(--accent-color);
+    }
   }
 `;

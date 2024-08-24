@@ -37,9 +37,17 @@ export const ContactButton = styled(Link)`
   background-color: var(--accent-color);
   transition: all 0.2s ease;
 
-  &:hover {
-    background-color: var(--white-color);
-    box-shadow: var(--small-glow-shadow);
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--white-color);
+      box-shadow: var(--small-glow-shadow);
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      background-color: var(--white-color);
+      box-shadow: var(--small-glow-shadow);
+    }
   }
 `;
 
@@ -55,9 +63,17 @@ export const DownloadButton = styled.a`
   background-color: var(--accent-color);
   transition: all 0.2s ease;
 
-  &:hover {
-    background-color: var(--white-color);
-    box-shadow: var(--small-glow-shadow);
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--white-color);
+      box-shadow: var(--small-glow-shadow);
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      background-color: var(--white-color);
+      box-shadow: var(--small-glow-shadow);
+    }
   }
 `;
 
@@ -82,8 +98,15 @@ export const Icon = styled.div`
   align-items: center;
   background-color: var(--second-bg-color);
   transition: all 0.2s ease;
-  
-  &:hover{
-    box-shadow: var(--small-glow-shadow);
+
+  @media (hover: hover) {
+    &:hover {
+      text-shadow: var(--small-glow-shadow);
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      text-shadow: var(--small-glow-shadow);
+    }
   }
 `;

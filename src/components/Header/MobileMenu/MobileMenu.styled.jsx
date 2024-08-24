@@ -24,11 +24,18 @@ export const StyledLink = styled(Link)`
   transition:
     color 0.2s,
     text-shadow 0.2s;
-
-  &:hover,
-  &:focus {
-    color: var(--white-color);
-    text-shadow: var(--hover-shadow);
+  
+  @media (hover: hover) {
+    &:hover {
+      color: var(--white-color);
+      text-shadow: var(--hover-shadow);
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      color: var(--white-color);
+      text-shadow: var(--hover-shadow);
+    }
   }
 `;
 

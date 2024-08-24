@@ -15,10 +15,18 @@ export const SocialLink = styled.a`
   & > svg {
     transition: all 0.2s ease;
   }
-  &:hover {
-    color: var(--white-color);
-    & > svg {
-      scale: 1.1;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--white-color);
+      & > svg {
+        scale: 1.1;
+      }
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      color: var(--white-color);
     }
   }
 `;

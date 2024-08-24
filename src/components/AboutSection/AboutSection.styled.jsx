@@ -92,9 +92,17 @@ export const LinkStyled = styled(Link)`
 
   transition: all 0.2s ease;
 
-  &:hover {
-    color: var(--accent-color);
-    text-shadow: var(--small-glow-shadow);
+  @media (hover: hover) {
+    &:hover {
+      color: var(--accent-color);
+      text-shadow: var(--small-glow-shadow);
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      color: var(--accent-color);
+      text-shadow: var(--small-glow-shadow);
+    }
   }
 `;
 

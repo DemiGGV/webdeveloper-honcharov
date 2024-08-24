@@ -55,7 +55,7 @@ export const Skills = styled.h3`
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.5;
-  }  
+  }
 `;
 export const SubTitle = styled.h4`
   font-weight: 500;

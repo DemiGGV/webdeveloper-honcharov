@@ -49,7 +49,6 @@ export const ProjectTitle = styled.h3`
 
 export const ProjectDescription = styled.p`
   padding: 0 8px;
-  /* border-bottom: 1px solid var(--gray-color); */
   padding-bottom: 5px;
 
   @media screen and (min-width: 768px) {
@@ -78,9 +77,16 @@ export const ProjectSubTitle = styled.a`
 
   transition: all 0.2s ease;
   cursor: pointer;
-
-  &:hover {
-    box-shadow: var(--small-glow-shadow);
+  
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: var(--small-glow-shadow);
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      box-shadow: var(--small-glow-shadow);
+    }
   }
 `;
 

@@ -11,9 +11,18 @@ export const Link = styled(HashLink)`
   opacity: 0.5;
   transition: all 0.2s ease;
 
-  &:hover {
-    opacity: 1;
-    color: var(--accent-color);
-    text-shadow: var(--small-glow-shadow);
+  @media (hover: hover) {
+    &:hover {
+      opacity: 1;
+      color: var(--accent-color);
+      text-shadow: var(--small-glow-shadow);
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      opacity: 1;
+      color: var(--accent-color);
+      text-shadow: var(--small-glow-shadow);
+    }
   }
 `;

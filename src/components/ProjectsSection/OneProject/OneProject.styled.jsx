@@ -43,8 +43,15 @@ export const ImageWraper = styled.div`
     min-width: 380px;
   }
 
-  &:hover {
-    background-color: var(--weak-accent-color);
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--weak-accent-color);
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      background-color: var(--weak-accent-color);
+    }
   }
 `;
 
@@ -86,11 +93,7 @@ export const ProjectDescription = styled.p`
     right: 0;
     bottom: 0;
     height: 50px;
-    background: linear-gradient(
-      to bottom,
-      transparent,
-      black 100%
-    );
+    background: linear-gradient(to bottom, transparent, black 100%);
   }
 
   @media screen and (min-width: 1440px) {
@@ -110,7 +113,17 @@ export const ProjectLink = styled.a`
   padding: 12px;
   transition: all 0.2s ease;
 
-  &:hover {
-    color: var(--accent-color);
+  
+  @media (hover: hover) {
+    &:hover {
+      color: var(--white-color);
+      text-shadow: var(--hover-shadow);
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      color: var(--white-color);
+      text-shadow: var(--hover-shadow);
+    }
   }
 `;

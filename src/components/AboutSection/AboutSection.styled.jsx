@@ -21,7 +21,6 @@ export const Container = styled.section`
 export const SubContainer = styled.div`
   margin-bottom: 64px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 20px;
     flex-shrink: 2;
     display: flex;
     flex-direction: column;
@@ -74,9 +73,6 @@ export const SubText = styled.p`
   color: var(--gray-color);
   margin-bottom: 32px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 53px;
-  }
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.5;

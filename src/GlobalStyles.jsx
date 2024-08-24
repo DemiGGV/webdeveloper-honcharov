@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
+import '../node_modules/react-toastify/dist/ReactToastify.min.css';
 
 export const GlobalCSS = createGlobalStyle`
 :root {

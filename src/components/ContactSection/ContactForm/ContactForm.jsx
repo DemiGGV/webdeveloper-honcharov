@@ -7,12 +7,17 @@ import {
 } from './ContactForm.styled';
 import { ErrorMessage, Formik } from 'formik';
 import * as Yup from 'yup';
+import { email_send } from '../../Utils/Email_service/email_service';
 
 export const ContactForm = () => {
+
   const handleSubmit = (value, { resetForm }) => {
-    const { name, email, brief } = value;
-    console.log(value)
-    console.log('name:', name, 'email:', email, 'message:', brief);
+    const email = {
+      from_name: value.name,
+      from_email: value.email,
+      message: value.message
+    }
+    email_send(email);
     resetForm();
   };
 
@@ -26,7 +31,7 @@ export const ContactForm = () => {
       .min(7, 'Too Short! (min - 7)')
       .max(30, 'Too Long! (max - 30)')
       .required('Required'),
-    brief: Yup.string()
+    message: Yup.string()
       .min(3, 'Too Short! (min - 3)')
       .max(300, 'Too Long! (max - 300)')
       .required('Required'),
@@ -37,7 +42,7 @@ export const ContactForm = () => {
       initialValues={{
         name: '',
         email: '',
-        brief: '',
+        message: '',
       }}
       validationSchema={ContactFormSchema}
       onSubmit={handleSubmit}
@@ -60,9 +65,9 @@ export const ContactForm = () => {
             <FieldInput
               as='textarea'
               rows="5"
-              name="brief"              
+              name="message"              
             />
-            <ErrorMessage component={ErrorField} name="brief" />
+            <ErrorMessage component={ErrorField} name="message" />
           </LabelDiv>
           <SubmitButton type="submit" disabled={!(isValid && dirty)}>
             Submit

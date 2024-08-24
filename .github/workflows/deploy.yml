@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
 env:
+  REACT_APP_PUBLIC_KEY: ${{secrets.VITE_PUBLIC_KEY}}
+  REACT_APP_SERVICE_ID: ${{secrets.VITE_SERVICE_ID}}
+  REACT_APP_TEMPLATE_ID: ${{secrets.VITE_TEMPLATE_ID}}
   VITE_API_TEST: ${{secrets.VITE_API_TEST}}
 
 jobs:

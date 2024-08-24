@@ -13,9 +13,9 @@ jobs:
 
       - name: Install, build 🔧
         env:
-          VITE_PUBLIC_KEY: ${{secrets.VITE_PUBLIC_KEY}}
-          VITE_SERVICE_ID: ${{secrets.VITE_SERVICE_ID}}
-          VITE_TEMPLATE_ID: ${{secrets.VITE_TEMPLATE_ID}}
+          VITE_PUBLIC_KEY: ${{ secrets.VITE_PUBLIC_KEY }}
+          VITE_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
+          VITE_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
         run: |
           npm install
           npm run build

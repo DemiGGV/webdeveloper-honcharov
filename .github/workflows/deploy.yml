@@ -3,10 +3,7 @@ name: Build and deploy to GitHub Pages
 on:
   push:
     branches: [main]
-env:
-  VITE_PUBLIC_KEY: ${{secrets.VITE_PUBLIC_KEY}}
-  VITE_SERVICE_ID: ${{secrets.VITE_SERVICE_ID}}
-  VITE_TEMPLATE_ID: ${{secrets.VITE_TEMPLATE_ID}}
+env:  
   VITE_API_TEST: ${{secrets.VITE_API_TEST}}
 
 jobs:
@@ -17,7 +14,11 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install, build 🔧
-        run: |
+        env:
+          VITE_PUBLIC_KEY: ${{secrets.VITE_PUBLIC_KEY}}
+          VITE_SERVICE_ID: ${{secrets.VITE_SERVICE_ID}}
+          VITE_TEMPLATE_ID: ${{secrets.VITE_TEMPLATE_ID}}
+        run:
           npm install
           npm run build
           cp ./dist/index.html ./dist/404.html

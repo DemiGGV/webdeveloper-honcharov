@@ -865,7 +865,6 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof e.getDerivedStat
 `,V4=O.div`
   margin-bottom: 64px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 20px;
     flex-shrink: 2;
     display: flex;
     flex-direction: column;
@@ -912,9 +911,6 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof e.getDerivedStat
   color: var(--gray-color);
   margin-bottom: 32px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 53px;
-  }
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.5;

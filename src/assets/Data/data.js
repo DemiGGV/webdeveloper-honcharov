@@ -76,7 +76,7 @@ export const experience = [
   {
     profession: 'SEO-specialist',
     company: 'ITDevSEO',
-    time: 'March 2017 - Oct 2020',
+    time: 'Aug 2016 - Feb 2022',
     description:
       'Deploying, administering and maintaining a hosted website. Adjustment of structure and design with the help of the WordPress CMS. Creating a semantic kernel for the site. Working with tools: Google Search Console, Google Analytics, Serpstat, SimilarWeb, Screaming Frog SEO Spider and PageSpeed Insights. Working with link mass: Google Ads, Yandex Wordstat Assistant, Google Trends, Text.ru',
   },
@@ -85,7 +85,7 @@ export const experience = [
 export const education = [    {
   profession: 'Fullstack Developer',
   company: 'GoIT school / Kyiv, Ukraine',
-  time: 'November 2022 - August 2023',
+  time: 'Nov 2022 - Oct 2023',
   description:
     'And here I am back at university! Again my brains are boiling from the volume of new information. HTML and CSS already seem to be familiar to me - and I`m discovering a new world again! Javascript and the site comes to life, finally I`m not just a CMS user, but I can write all the code for the site myself. Then I learn React and again so much information, but it`s a completely different approach to website development. The teachers at this school are simply the best. The course on server-side development with Node.js and mobile development with React Native - complete my capabilities as a fullstack developer.',
 },
@@ -99,7 +99,7 @@ export const education = [    {
 {
   profession: 'Engineering technology /undergraduate degree/',
   company: 'Pryazovskyi State Technical University / Mariupol, Ukraine',
-  time: 'Sep 1993 - Aug 1996',
+  time: 'Sep 1992 - Aug 1996',
   description:
     'I had excellent grades in higher mathematics and resistance of materials. At university I was introduced to programming in Pascal and C, and was a participant in an initiative group of students developing an applied program-guide for the course “Materials Science”. Applied mathematics, probability theory and mathematical analysis were also interesting in the curriculum',
 },];

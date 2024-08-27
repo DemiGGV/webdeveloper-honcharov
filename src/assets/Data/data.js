@@ -5,7 +5,7 @@ export const data = [
     image: 'projects/Mixmasters-front',
     alt: 'Mixmasters project picture',
     description:
-      'This is a final team-project of a complete web-application with frontend and backend part. In this project, the creation and customization of the backend of this application was entirely my responsibility, in addition to that I did a few frontend tasks as well. My responsibilities also included customizing the redux for the entire application.',
+      'Server hosted on Render the first start time is about a minute!!! This is a final team-project of a complete web-application with frontend and backend part. In this project, the creation and customization of the backend of this application was entirely my responsibility, in addition to that I did a few frontend tasks as well. My responsibilities also included customizing the redux for the entire application.',
     skills:
       'React/JavaScript · REDUX/ReduxToolkit · HTML5 · CSS3/SASS · REST API',
     link: 'https://demiggv.github.io/Mixmasters-pet/',
@@ -17,7 +17,7 @@ export const data = [
     image: 'projects/Mixmasters-back',
     alt: 'Mixmasters-API project picture',
     description:
-      "This is the server side of the Mixmasters project. It is built using the Express framework in a Node.js environment, with MongoDB as the database and Cloudinary for cloud image storage. Server capabilities include: user authorization using JWT-tokens, sorting the recipe collection, filtering them, adding recipes to favorites of certain users, and adding new recipes by users to the database.",
+      "Server hosted on Render the first start time is about a minute!!! This is the server side of the Mixmasters project. It is built using the Express framework in a Node.js environment, with MongoDB as the database and Cloudinary for cloud image storage. Server capabilities include: user authorization using JWT-tokens, sorting the recipe collection, filtering them, adding recipes to favorites of certain users, and adding new recipes by users to the database.",
     skills:
       'Node.JS/JavaScript · Express.JS · MongoDB/Mongoose · REST API · Swagger (API and tests) · Jest',
     link: 'https://mixmasters.onrender.com/api-docs/',

@@ -2,7 +2,7 @@ export const data = [
   {
     id: 1,
     title: 'Mixmasters-front',
-    image: 'projects/Mixmasters-front',
+    image: 'src/assets/images/projects/Mixmasters-front@2x.jpg',
     alt: 'Mixmasters project picture',
     description:
       'Server hosted on Render the first start time is about a minute!!! This is a final team-project of a complete web-application with frontend and backend part. In this project, the creation and customization of the backend of this application was entirely my responsibility, in addition to that I did a few frontend tasks as well. My responsibilities also included customizing the redux for the entire application.',
@@ -14,7 +14,7 @@ export const data = [
   {
     id: 2,
     title: 'Mixmasters-back',
-    image: 'projects/Mixmasters-back',
+    image: 'src/assets/images/projects/Mixmasters-back@2x.jpg',
     alt: 'Mixmasters-API project picture',
     description:
       "Server hosted on Render the first start time is about a minute!!! This is the server side of the Mixmasters project. It is built using the Express framework in a Node.js environment, with MongoDB as the database and Cloudinary for cloud image storage. Server capabilities include: user authorization using JWT-tokens, sorting the recipe collection, filtering them, adding recipes to favorites of certain users, and adding new recipes by users to the database.",
@@ -26,7 +26,7 @@ export const data = [
   {
     id: 3,
     title: 'BookShop',
-    image: 'projects/BookShop',
+    image: 'src/assets/images/projects/BookShop@2x.jpg',
     alt: 'BookShop project picture',
     description:
       'Web application - "Book-shop" with authorization and list of user`s favorite books. The main practice is JavaScript language. Setting up data exchange with the server. Setting up Firebase storage. Also layout - HTML5/CSS3(SCSS). It`s a team project. Which I refactored and cleaned up after completion. My participation in this project is the backend part and a few frontend tasks.',
@@ -37,7 +37,7 @@ export const data = [
   {
     id: 4,
     title: 'MIMIHO',
-    image: 'projects/MIMIHO',
+    image: 'src/assets/images/projects/MIMIHO@2x.jpg',
     alt: 'MIMIHO project picture',
     description:
       ' Multi-page website. Semantic layout according to the design project. This is also a team project. I was the team leader on this project. In it, we practiced HTML5 and CSS3 layout skills, as well as team collaboration, applying SCRUM methodology. The main feature is the use of the project builder, which allowed the entire development team to work in one repository. I, as a team lead, had to learn how to resolve pool-requests conflicts.',
@@ -48,7 +48,7 @@ export const data = [
   {
     id: 5,
     title: 'WebStudio',
-    image: 'projects/webstudio',
+    image: 'src/assets/images/projects/webstudio@2x.jpg',
     alt: 'Webstudio project picture',
     description:
       'HTML5 + CSS3 + several JS-scripts. Here I apply and practice skills in web-application layout and styling. It supports adaptability on the principle of mobile-first. The following options are also implemented here: modal windows, multi-page, strict semantic layout according to the design.',

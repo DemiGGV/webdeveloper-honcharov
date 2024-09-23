@@ -1,20 +1,13 @@
-import { ImageStyled } from './ImageComponent.styled';
+import { ImageFadeBox, ImageStyled } from './ImageComponent.styled';
 
-export const ImageComponent = ({imgName, alt, maxHeight = "400px", width = "100%", ext = "jpg"}) => {
-
-  const publicUrl = import.meta.env.BASE_URL;
-
+export const ImageComponent = ({
+  maxImgWidth = 'fit-content',
+  imageSrc = 'src/assets/images/placeholder.png',
+  altText = 'Placegolder Image',
+}) => {
   return (
-      <ImageStyled
-        srcSet={
-            `${publicUrl}/images/${imgName}@1x.${ext} 1x,
-             ${publicUrl}/images/${imgName}@2x.${ext} 2x`}
-        src={`${publicUrl}/images/${imgName}@1x.${ext}`}
-        alt={`${alt}`}
-        loading = "lazy"
-        decoding = "async"
-        $maxHeight = {maxHeight}
-        $width = {width}
-      />
+    <ImageFadeBox $maxImgWidth={maxImgWidth}>
+      <ImageStyled src={imageSrc} alt={altText} />
+    </ImageFadeBox>
   );
 };

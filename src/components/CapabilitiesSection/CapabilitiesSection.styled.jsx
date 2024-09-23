@@ -1,7 +1,6 @@
 import { styled } from 'styled-components';
 // Container,
 export const Container = styled.section`
-
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -71,9 +70,9 @@ export const CapabilitiesList = styled.ul`
 `;
 // Item of list
 export const ListItem = styled.li`
-    border: 1px solid var(--gray-color);
-    border-radius: 30px;
-    box-shadow: var(--small-glow-shadow);
+  border: 1px solid var(--gray-color);
+  border-radius: 30px;
+  box-shadow: var(--small-glow-shadow);
 `;
 //   Capability
 export const Capability = styled.p`

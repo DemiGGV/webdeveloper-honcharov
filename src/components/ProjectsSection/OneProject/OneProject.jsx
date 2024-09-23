@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import ReactModal from 'react-modal';
 
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
@@ -15,8 +14,6 @@ import {
 } from './OneProject.styled';
 import { ImageComponent } from '../../Utils/ImageComponent/ImageComponent';
 import { ModalProject } from '../ModalProject/ModalProject';
-
-ReactModal.setAppElement('#root');
 
 export const OneProject = ({ item }) => {
   const {
@@ -50,11 +47,13 @@ export const OneProject = ({ item }) => {
         link={link}
       />
       <ImageWraper onClick={() => handleOpenModal()}>
-        <ImageComponent imgName={image} alt={alt} maxHeight="400px" />
+        <ImageComponent maxImgWidth="auto" imageSrc={image} altText={alt} />
       </ImageWraper>
       <ProjectCard>
         <ProjectTitle>{title}</ProjectTitle>
-        <ProjectDescription  onClick={() => handleOpenModal()}>{description}</ProjectDescription>
+        <ProjectDescription onClick={() => handleOpenModal()}>
+          {description}
+        </ProjectDescription>
         <ProjectSubTitle>Skills:</ProjectSubTitle>
         <ProjectSkills>{skills}</ProjectSkills>
         <div>

@@ -1,4 +1,4 @@
-import { ResponsiveImage } from '../Utils/ResponsiveImg/ResponsiveImg';
+import { ImageComponent } from '../Utils/ImageComponent/ImageComponent';
 import {
   Container,
   SubContainer,
@@ -33,11 +33,7 @@ export const CapabilitiesSection = () => {
 
   return (
     <Container>
-      <ResponsiveImage
-        imgName="about"
-        alt="Full picture Heorhii Honcharov"
-        ext="png"
-      />
+      <ImageComponent imageSrc="../src/assets/images/city-view.png" altText="Person in City view" />
       <SubContainer>
         <Title>My&nbsp;capabilities</Title>
         <SubSubContainer>

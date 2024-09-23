@@ -13,6 +13,8 @@ import {
 } from './ModalProject.styled';
 import { ImageComponent } from '../../Utils/ImageComponent/ImageComponent';
 
+ReactModal.setAppElement('#root');
+
 export const ModalProject = ({
   handleCloseModal,
   modalIsOpen,
@@ -38,12 +40,7 @@ export const ModalProject = ({
         <IoCloseOutline style={{ height: 32, width: 32 }} />
       </ButtonCloseWrapper>
       <ImageWraper>
-        <ImageComponent
-          imgName={image}
-          alt={alt}
-          maxHeight="calc(100% - 80px)"
-          height="100%"
-        />
+      <ImageComponent maxImgWidth="auto" imageSrc={image} altText={alt} />
       </ImageWraper>
       <ProjectCard>
         <ProjectTitle>{title}</ProjectTitle>

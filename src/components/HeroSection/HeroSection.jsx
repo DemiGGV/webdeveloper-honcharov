@@ -1,10 +1,10 @@
-import { ResponsiveImage } from '../Utils/ResponsiveImg/ResponsiveImg.jsx';
 import { ActionBox } from '../Utils/ActionBox/ActionBox.jsx'
 import { 
   Title,
   SubText,
   Container,
   SubContainer, } from "./HeroSection.styled";
+import { ImageComponent } from '../Utils/ImageComponent/ImageComponent.jsx';
 
 export const HeroSection = ({ id }) => {
   return (    
@@ -17,11 +17,7 @@ export const HeroSection = ({ id }) => {
         </SubText>
         <ActionBox download={false} />
       </SubContainer>
-      <ResponsiveImage
-        imgName="hero"
-        alt="Photo by Heorhii Honcharov - Fullstack Developer"
-        ext="png"
-      />
+      <ImageComponent maxImgWidth="30rem" imageSrc="../src/assets/images/image-hero.png" altText="Foto Web-Developer Heorhii Honcharov" />
       </Container>
   );
 };

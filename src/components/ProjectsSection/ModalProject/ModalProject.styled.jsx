@@ -17,7 +17,6 @@ export const ImageWraper = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  border-radius: 16px;
   overflow: hidden;
 
   transition: all 0.2s ease;

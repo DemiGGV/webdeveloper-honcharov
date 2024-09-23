@@ -1,4 +1,4 @@
-import { ResponsiveImage } from '../Utils/ResponsiveImg/ResponsiveImg.jsx';
+import { ImageComponent } from '../Utils/ImageComponent/ImageComponent.jsx';
 import {
   Title,
   SubTitle,
@@ -29,12 +29,7 @@ export const AboutSection = ({ id }) => {
         <LinkStyled to="/about-me/#">More about me</LinkStyled>
       </SubContainer>
       <ImageWrapper>
-        <ResponsiveImage
-          imgName="connect"
-          alt="Photo by Heorhii Honcharov - Fullstack Developer"
-          maxHeight="400"
-          ext="png"
-        />
+        <ImageComponent imageSrc="../src/assets/images/about.png" altText="Alternate foto developer"/>
       </ImageWrapper>
     </Container>
   );

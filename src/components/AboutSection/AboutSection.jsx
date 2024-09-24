@@ -1,4 +1,5 @@
 import { ImageComponent } from '../Utils/ImageComponent/ImageComponent.jsx';
+import image from "../../assets/images/about.png"
 import {
   Title,
   SubTitle,
@@ -29,7 +30,7 @@ export const AboutSection = ({ id }) => {
         <LinkStyled to="/about-me/#">More about me</LinkStyled>
       </SubContainer>
       <ImageWrapper>
-        <ImageComponent imageSrc="images/about.png" altText="Alternate foto developer"/>
+        <ImageComponent imageSrc={image} altText="Alternate foto developer"/>
       </ImageWrapper>
     </Container>
   );

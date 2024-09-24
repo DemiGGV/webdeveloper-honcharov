@@ -1,4 +1,5 @@
 import { ActionBox } from '../Utils/ActionBox/ActionBox.jsx'
+import image from "../../assets/images/image-hero.png"
 import { 
   Title,
   SubText,
@@ -17,7 +18,7 @@ export const HeroSection = ({ id }) => {
         </SubText>
         <ActionBox download={false} />
       </SubContainer>
-      <ImageComponent maxImgWidth="30rem" imageSrc="images/image-hero.png" altText="Foto Web-Developer Heorhii Honcharov" />
+      <ImageComponent maxImgWidth="30rem" imageSrc={image} altText="Foto Web-Developer Heorhii Honcharov" />
       </Container>
   );
 };

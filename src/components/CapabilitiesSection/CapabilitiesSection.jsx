@@ -1,4 +1,5 @@
 import { ImageComponent } from '../Utils/ImageComponent/ImageComponent';
+import image from "../../assets/images/city-view.png"
 import {
   Container,
   SubContainer,
@@ -33,7 +34,7 @@ export const CapabilitiesSection = () => {
 
   return (
     <Container>
-      <ImageComponent imageSrc="images/city-view.png" altText="Person in City view" />
+      <ImageComponent imageSrc={image} altText="Person in City view" />
       <SubContainer>
         <Title>My&nbsp;capabilities</Title>
         <SubSubContainer>

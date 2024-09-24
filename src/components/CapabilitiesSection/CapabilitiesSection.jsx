@@ -33,7 +33,7 @@ export const CapabilitiesSection = () => {
 
   return (
     <Container>
-      <ImageComponent imageSrc="../src/assets/images/city-view.png" altText="Person in City view" />
+      <ImageComponent imageSrc="images/city-view.png" altText="Person in City view" />
       <SubContainer>
         <Title>My&nbsp;capabilities</Title>
         <SubSubContainer>

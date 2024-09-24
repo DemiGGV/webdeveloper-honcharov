@@ -29,7 +29,7 @@ export const AboutSection = ({ id }) => {
         <LinkStyled to="/about-me/#">More about me</LinkStyled>
       </SubContainer>
       <ImageWrapper>
-        <ImageComponent imageSrc="../src/assets/images/about.png" altText="Alternate foto developer"/>
+        <ImageComponent imageSrc="images/about.png" altText="Alternate foto developer"/>
       </ImageWrapper>
     </Container>
   );

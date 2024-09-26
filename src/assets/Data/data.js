@@ -1,5 +1,17 @@
 export const data = [
   {
+    id: 0,
+    title: 'WeatherAPP',
+    image: 'images/projects/WeatherAPP@2x.jpg',
+    alt: 'WeatherAPP project picture',
+    description:
+      'This is an ongoing project that i have been doing as part of the PREAX volunteer project. By participating in this project, i was able to further develop my soft-skills when i reviewed other participants work, as well as receiving reviews on my own work. I also practiced frontend development skills (HTML, CSS, JS)',
+    skills:
+      'HTML5 · CSS3 · JS',
+    link: 'https://demiggv.github.io/WeatherAPP/',
+    linkG: 'https://github.com/DemiGGV/WeatherAPP',
+  },
+  {
     id: 1,
     title: 'Mixmasters-front',
     image: 'images/projects/Mixmasters-front@2x.jpg',

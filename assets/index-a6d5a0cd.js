@@ -515,7 +515,7 @@ PERFORMANCE OF THIS SOFTWARE.
       text-shadow: var(--small-glow-shadow);
     }
   }
-`,z0=({download:e})=>{const t="/webdeveloper-honcharov/";return w.jsxs(YE,{children:[e?w.jsxs(qE,{href:`${t}/assets/Resume-EN-Git.pdf`,download:!0,children:[w.jsx(Eh,{children:"Download resume"}),w.jsx(bh,{children:w.jsx(HE,{style:{color:"#d3e97a",width:"24px",height:"24px"}})})]}):w.jsxs(QE,{smooth:!0,to:"/#contact",children:[w.jsx(Eh,{children:"Contact Me"}),w.jsx(bh,{children:w.jsx(KE,{style:{color:"#d3e97a",width:"24px",height:"24px"}})})]}),w.jsx(kh,{href:"https://www.linkedin.com/in/heorhii-honcharov/",target:"_blank",rel:"noopener noreferrer",children:w.jsx(Ch,{children:w.jsx(D0,{style:{color:"#d3e97a",width:"24px",height:"24px"}})})}),w.jsx(kh,{href:"https://github.com/DemiGGV",target:"_blank",rel:"noopener noreferrer",children:w.jsx(Ch,{children:w.jsx(L0,{style:{color:"#d3e97a",width:"24px",height:"24px"}})})})]})},XE="/webdeveloper-honcharov/assets/image-hero-9b73860e.png",ZE=$.div`
+`,z0=({download:e})=>{const t="/webdeveloper-honcharov/";return w.jsxs(YE,{children:[e?w.jsxs(qE,{href:`${t}/assets/Application-as-Fullstack-Developer.pdf`,download:!0,children:[w.jsx(Eh,{children:"Download resume"}),w.jsx(bh,{children:w.jsx(HE,{style:{color:"#d3e97a",width:"24px",height:"24px"}})})]}):w.jsxs(QE,{smooth:!0,to:"/#contact",children:[w.jsx(Eh,{children:"Contact Me"}),w.jsx(bh,{children:w.jsx(KE,{style:{color:"#d3e97a",width:"24px",height:"24px"}})})]}),w.jsx(kh,{href:"https://www.linkedin.com/in/heorhii-honcharov/",target:"_blank",rel:"noopener noreferrer",children:w.jsx(Ch,{children:w.jsx(D0,{style:{color:"#d3e97a",width:"24px",height:"24px"}})})}),w.jsx(kh,{href:"https://github.com/DemiGGV",target:"_blank",rel:"noopener noreferrer",children:w.jsx(Ch,{children:w.jsx(L0,{style:{color:"#d3e97a",width:"24px",height:"24px"}})})})]})},XE="/webdeveloper-honcharov/assets/image-hero-9b73860e.png",ZE=$.div`
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -1114,7 +1114,7 @@ attempted value: ${a}
       color: var(--accent-color);
     }
   }
-`,D5=({id:e})=>{const t="/webdeveloper-honcharov/";return w.jsxs(N5,{id:e,children:[w.jsxs(F5,{children:[w.jsx(L5,{children:"Let's connect"}),w.jsxs(M5,{children:[w.jsxs(Nm,{children:["Say hello to me ",w.jsx(Fm,{href:"mailto:heorhii.honcharov@gmail.com",target:"_blank",rel:"noopener noreferrer",children:"with a letter"})]}),w.jsxs(Nm,{children:["For more info, here's my ",w.jsx(Fm,{href:`${t}/assets/Resume-EN-Git.pdf`,download:!0,target:"_blank",rel:"noopener noreferrer",children:"resume"})]})]}),w.jsx(R5,{})]}),w.jsx(P5,{})]})},z5=$.div`
+`,D5=({id:e})=>{const t="/webdeveloper-honcharov/";return w.jsxs(N5,{id:e,children:[w.jsxs(F5,{children:[w.jsx(L5,{children:"Let's connect"}),w.jsxs(M5,{children:[w.jsxs(Nm,{children:["Say hello to me ",w.jsx(Fm,{href:"mailto:heorhii.honcharov@gmail.com",target:"_blank",rel:"noopener noreferrer",children:"with a letter"})]}),w.jsxs(Nm,{children:["For more info, here's my ",w.jsx(Fm,{href:`${t}/assets/Application-as-Fullstack-Developer.pdf`,download:!0,target:"_blank",rel:"noopener noreferrer",children:"resume"})]})]}),w.jsx(R5,{})]}),w.jsx(P5,{})]})},z5=$.div`
   margin-top: 40px;
   
   display: flex;

@@ -15,7 +15,7 @@ export const ActionBox = ({download}) => {
   return (
     <Container>
       {download ?
-      <DownloadButton href={`${publicUrl}/assets/Resume-EN-Git.pdf`} download>
+      <DownloadButton href={`${publicUrl}/assets/Application-as-Fullstack-Developer.pdf`} download>
         <StyledText>Download&nbsp;resume</StyledText>
         <IconSend>
           <IoDownloadOutline

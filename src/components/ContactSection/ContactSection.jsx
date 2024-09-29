@@ -30,7 +30,7 @@ export const ContactSection = ({ id }) => {
           <InviteText>
             For more info, here&apos;s my&nbsp;
             <InviteLink
-              href={`${publicUrl}/assets/Resume-EN-Git.pdf`}
+              href={`${publicUrl}/assets/Application-as-Fullstack-Developer.pdf`}
               download
               target="_blank"
               rel="noopener noreferrer"
